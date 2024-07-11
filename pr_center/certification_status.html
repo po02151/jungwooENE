@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>인증현황</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/b025689c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">logo</a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutUs/ceo_greetings.html">회사소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/history.html">연혁</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product_introduction/product_list.html">제품소개</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../product_introduction/double_piping.html">이중배관</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../business/research_and_development.html">연구개발</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../business/research_and_development.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/business_areas.html">사업분야</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../pr_center/notice.html">홍보센터</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../pr_center/notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/certification_status.html">인증현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/video.html">영상자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/blog.html">블로그</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../sustainability/sustainability.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../customer_support/customer_support.html">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <button>EN</button>
+                                <button class="active">KR</button>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">logo</a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>제품소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../product_introduction/double_piping.html">이중배관</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>연구개발</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../business/research_and_development.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                </li>
+                                <li>
+                                    <a href="../business/business_areas.html">사업분야</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/certification_status.html">인증현황</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/video.html">영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/blog.html">블로그</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../sustainability/sustainability.html">지속가능경영</a>
+                        </li>
+                        <li>
+                            <a href="../customer_support/customer_support.html">고객지원</a>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+        
+        <button class="topBtn"></button>
+        <!-- topBtn -->
+        
+        <div class="subPage pr_center certification_status">
+            <div class="lnb">
+                <div>
+                    <div class="sub_nav">
+                        <span></span>
+                        <span>홍보센터</span>
+                        <span>인증현황</span>
+                    </div>
+    
+                    <h2>인증현황</h2>
+    
+                    <div class="btnBox">
+                        <a href="../pr_center/notice.html">공지사항</a>
+                        <a href="../pr_center/certification_status.html" class="active">인증현황</a>
+                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                        <a href="../pr_center/video.html">영상자료</a>
+                        <a href="../pr_center/blog.html">블로그</a>
+                    </div>
+                </div>
+            </div>
+            <!-- lnb Fin -->
+
+            <div class="contentBox">
+                <div>
+                    <div class="left stickyBox">
+                        <h3>
+                            풍부한 경험과 기술로 만들어진<br>
+                            특허 및 인증서를 소개합니다.
+                        </h3>
+                    </div>
+                    <div class="right">
+                        <div class="slide_tabBtnWrap">
+                            <div class="slide_tabBtnBox active_1">
+                                <button class="tabBtn_1">
+                                    <span>Patent</span>
+                                </button>
+                                <button class="tabBtn_2">
+                                    <span>Certificate</span>
+                                </button>
+                                <button class="tabBtn_3">
+                                    <span>WPS</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 첫번째 버튼을 누르면 slide_tabBtnBox에 active_1 클래스, 두번째 버튼 : active_2, 세번째 버튼 : active_3 -->
+
+                        <div class="tabContentBox">
+                            <div class="tabContent_1 active">
+                                <ul>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_1.jpg" alt="상표등록증">
+                                        </div>
+                                        <span>상표등록증</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_2.jpg" alt="연료가스공급시스템">
+                                        </div>
+                                        <span>연료가스공급시스템</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_3.jpg" alt="초저온 저장탱크">
+                                        </div>
+                                        <span>초저온 저장탱크</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_4.jpg" alt="극저온 액화가스용 - 멀티밸브">
+                                        </div>
+                                        <span>극저온 액화가스용 - 멀티밸브</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_5.jpg" alt="제 30-0733677">
+                                        </div>
+                                        <span>제 30-0733677</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_6.jpg" alt="연료가스 공급 시스템의 고압펌프 구동장치">
+                                        </div>
+                                        <span>연료가스 공급 시스템의 고압펌프 구동장치</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_7.jpg" alt="선박용 연료가스 이중배관">
+                                        </div>
+                                        <span>선박용 연료가스 이중배관</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_8.jpg" alt="진공단열배관">
+                                        </div>
+                                        <span>진공단열배관</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_9.jpg" alt="액화가스용멀티밸브">
+                                        </div>
+                                        <span>액화가스용멀티밸브</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_10.jpg" alt="일체형진공포트">
+                                        </div>
+                                        <span>일체형진공포트</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_11.jpg" alt="열교환기가 포함된 저장탱크">
+                                        </div>
+                                        <span>열교환기가 포함된 저장탱크</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_12.jpg" alt="선박용 연료가스 이중배관의 점검">
+                                        </div>
+                                        <span>선박용 연료가스 이중배관의 점검</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_13.jpg" alt="초저온 저장탱크용 레귤레이터">
+                                        </div>
+                                        <span>초저온 저장탱크용 레귤레이터</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_14.jpg" alt="진공단열배관용 안전포트">
+                                        </div>
+                                        <span>진공단열배관용 안전포트</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_15.jpg" alt="이중 배관의 유체 압력 점검용 엔드 플러그">
+                                        </div>
+                                        <span>이중 배관의 유체 압력 점검용 엔드 플러그</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_16.jpg" alt="벙커링 시스템">
+                                        </div>
+                                        <span>벙커링 시스템</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_17.jpg" alt="진공용 금속 배관용 16건 (상표등록증)">
+                                        </div>
+                                        <span>진공용 금속 배관용 16건 (상표등록증)</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/patent_17.jpg" alt="액화천연가스 연료 선박용 기화기">
+                                        </div>
+                                        <span>액화천연가스 연료 선박용 기화기</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Patent Fin -->
+                            
+                            <div class="tabContent_2">
+                                <ul>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_1.jpg" alt="국가핵심기술인증서">
+                                        </div>
+                                        <span>국가핵심기술인증서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_2.jpg" alt="기업부설연구소 인증서">
+                                        </div>
+                                        <span>기업부설연구소 인증서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_3.jpg" alt="벤처기업확인서">
+                                        </div>
+                                        <span>벤처기업확인서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_4.jpg" alt="소재부품전문기업확인서">
+                                        </div>
+                                        <span>소재부품전문기업확인서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_5.jpg" alt="클린사업장-인증서">
+                                        </div>
+                                        <span>클린사업장-인증서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_6.jpg" alt="이노비즈확인서">
+                                        </div>
+                                        <span>이노비즈확인서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_7.jpg" alt="특정설비-제조-증명서-TANK_VALVE">
+                                        </div>
+                                        <span>특정설비-제조-증명서-TANK_VALVE</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_8.jpg" alt="강원수소특구지정증서">
+                                        </div>
+                                        <span>강원수소특구지정증서</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/certificate_9.jpg" alt="품질경영시스템인증서(ABS)">
+                                        </div>
+                                        <span>품질경영시스템인증서(ABS)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Certificate Fin -->
+
+                            <div class="tabContent_3">
+                                <ul>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_1.jpg" alt="KR-VIP">
+                                        </div>
+                                        <span>KR-VIP</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_2.jpg" alt="WPS-DNV-GL">
+                                        </div>
+                                        <span>WPS-DNV-GL</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_3.jpg" alt="WPS-KR">
+                                        </div>
+                                        <span>WPS-KR</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_4.jpg" alt="WPS-ABS">
+                                        </div>
+                                        <span>WPS-ABS</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_5.jpg" alt="WPS-CCS">
+                                        </div>
+                                        <span>WPS-CCS</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_6.jpg" alt="WPS-BV">
+                                        </div>
+                                        <span>WPS-BV</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_7.jpg" alt="WPS-RINA">
+                                        </div>
+                                        <span>WPS-RINA</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_8.jpg" alt="WPS-LR">
+                                        </div>
+                                        <span>WPS-LR</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_9.jpg" alt="296-381-7-197962RS-선급">
+                                        </div>
+                                        <span>296-381-7-197962RS-선급</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_10.jpg" alt="WinGD – PreAppr_JungwooENE">
+                                        </div>
+                                        <span>WinGD – PreAppr_JungwooENE</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_11.jpg" alt="ASME01">
+                                        </div>
+                                        <span>ASME01</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_12.jpg" alt="ASME02">
+                                        </div>
+                                        <span>ASME02</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_13.jpg" alt="ASME03">
+                                        </div>
+                                        <span>ASME03</span>
+                                    </li>
+                                    <li>
+                                        <div class="imgBox">
+                                            <img src="../assets/images/wps_14.jpg" alt="DNV-GL 공장승인 CERT WWA000006X-revision3">
+                                        </div>
+                                        <span>DNV-GL 공장승인 CERT WWA000006X-revision3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Certificate Fin -->
+                        </div>
+
+                        <div class="certification_modal">
+                            <div>
+                                <button></button>
+                                <img src="../assets/images/patent_1.jpg" alt="인증서">
+                                <span>상표등록증</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="gray">
+            <div>
+                <img src="../assets/images/footer_logo.png" alt="정우 ENE 로고">
+                <div>
+                    <span>정우이앤이(주)</span>
+                    <span>대표이사 : 이선해</span>
+                    <span>부산광역시 강서구 녹산산단261로74번길 20</span>
+                </div>
+                <div>
+                    <span>TEL : +(82) 51-639-0700</span>
+                    <span>FAX : +(82) 51-941-3561</span>
+                    <span>E-MAIL : --@--</span>
+                </div>
+                <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>기술개발</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets//js/common.js"></script>
+    <script src="https://kit.fontawesome.com/b025689c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets//css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">logo</a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutUs/ceo_greetings.html">회사소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/history.html">연혁</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product_introduction/product_list.html">제품소개</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../product_introduction/double_piping.html">이중배관</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../business/research_and_development.html">연구개발</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../business/research_and_development.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/business_areas.html">사업분야</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../pr_center/notice.html">홍보센터</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../pr_center/notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/certification_status.html">인증현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/video.html">영상자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/blog.html">블로그</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../sustainability/sustainability.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../customer_support/customer_support.html">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <button>EN</button>
+                                <button class="active">KR</button>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">logo</a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>제품소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../product_introduction/double_piping.html">이중배관</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>연구개발</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../business/research_and_development.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                </li>
+                                <li>
+                                    <a href="../business/business_areas.html">사업분야</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/certification_status.html">인증현황</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/video.html">영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/blog.html">블로그</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../sustainability/sustainability.html">지속가능경영</a>
+                        </li>
+                        <li>
+                            <a href="../customer_support/customer_support.html">고객지원</a>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+        
+        <button class="topBtn"></button>
+        <!-- topBtn -->
+        
+        <div class="subPage researchAndDevelopment technology">
+            <div class="lnb">
+                <div>
+                    <div class="sub_nav">
+                        <span></span>
+                        <span>연구개발</span>
+                        <span>기술개발</span>
+                    </div>
+    
+                    <h2>기술개발</h2>
+    
+                    <div class="btnBox">
+                        <a href="../researchAndDevelopment/vision.html">비전·목표</a>
+                        <a href="../researchAndDevelopment/design.html">설계</a>
+                        <a href="../researchAndDevelopment/technology.html" class="active">기술개발</a>
+                        <a href="../researchAndDevelopment/certification.html">인증</a>
+                    </div>
+                </div>
+            </div>
+            <!-- lnb Fin -->
+
+            <div class="contentBox">
+                <h3>
+                    회사의 경쟁력 강화를 위한<br>
+                    지속적인 기술개발 추진
+                </h3>
+                <div>
+                    <p>
+                        강화되는 IMO(국제 해사 기구)의 환경 규제에 대응 가능한 대체 연료 선박으로 LNG 연료 추진선, 암모니아 연료 추진선, 액화 수소 연료 추진선 등이 유력 시 되고 있습니다.<br>
+                        정우이앤이는 다양한 선박에 대한 핵심 기자재 개발을 추진 중에 있습니다.
+                    </p>
+                    <p>또한, 미래 성장을 견인할 혁신 기술 개발의 일환으로 많은 국책과제 개발 및 참여를 통하여 지속적인 연구와 기술 교류로 신기술 개발을 통한 회사의 기술 경쟁력 강화에 주력하고 있습니다.</p>
+                </div>
+                
+
+                
+                <div class="tableWrap">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>15</td>
+                                <td>
+                                    <p>초저온 액체가스 충전 멀티밸브 국산화 개발초저온 액체가스 충전 멀티밸브 국산화 개발초저온 액체가스 충전 멀티밸브 국산화 개발초저온 액체가스 충전 멀티밸브 국산화 개발초저온 액체가스 충전 멀티밸브 국산화 개발초저온 액체가스 충전 멀티밸브 국산화 개발</p>
+                                </td>
+                                <td>지식경제부</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <p>선박용 LNG 연료공급시스템의 고압 초저온 인쇄회로기판형 열교환기 상용화 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <p>선박용 LNG 공급시스템의 초저온, 고압 고온 단열이중 배관 시스템 기술 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <p>선박용 LNG 공급시스템의 15m3급 Multi Stage High Pressure Pump 기술 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <p>대형 가스터빈 설계 및 시험 평가기술 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <p>LNG 선박용(20MW 급) 중앙제어형 Enclosed Gas Valve Unit 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <p>친환경 LNG 연료선박용 고효율 컴팩트형 기화기 국산화 개발</p>
+                                </td>
+                                <td>중소기업청</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <p>50DF급 LNG 추진선박 연료공급 시스템용 컴팩트형 차단밸브</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <p>육상용 단열형 액화천연가스 급유용 (3”(80A)급) 기술개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <p>LNG Transfer ERC용 FAS, Saddle, Hose Bun 설계 및 제작을 통한 국산화 개발</p>
+                                </td>
+                                <td>해양수산부</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>강제 대류식 액화수소 기화기 개발</td>
+                                <td>강원테크노파크</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <p>액화수소 플랜트용 이송 공정을 위한 6” 연료이송시스템 기술개발</p>
+                                </td>
+                                <td>국토교통부</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p>선박용 암모니아 연료공급 시스템 개발 및 실증  -  암모니아 고압펌프 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p>액화수소 기반 레저어선 개발</p>
+                                </td>
+                                <td>해양수산부</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p>LCO2 운반선 운용 시나리오에 따른 CO2 상변화 고려 압력 제어기술 및 PRV 개발</p>
+                                </td>
+                                <td>산업통상자원부</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <footer class="gray">
+            <div>
+                <img src="../assets//images/footer_logo.png" alt="정우 ENE 로고">
+                <div>
+                    <span>정우이앤이(주)</span>
+                    <span>대표이사 : 이선해</span>
+                    <span>부산광역시 강서구 녹산산단261로74번길 20</span>
+                </div>
+                <div>
+                    <span>TEL : +(82) 51-639-0700</span>
+                    <span>FAX : +(82) 51-941-3561</span>
+                    <span>E-MAIL : --@--</span>
+                </div>
+                <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1155 @@
+html,body{height: 100%;}
+ul,ol{list-style: none;}
+
+.mainSection_2 h2,
+.mainSection_3,
+.subPage .lnb > div,
+.subPage .contentBox{width: 1480px; margin: 0 auto;}
+
+h2,h3{word-break: keep-all;}
+
+.imgBox img{width: 100%; display: block; height: 100%; object-fit: cover;}
+h2.ball{display: inline-block; position: relative;}
+h2.ball:after{content: ''; position: absolute; width: 10px; height: 10px; border-radius: 100%; display: block; right: -20px; bottom: 12px;}
+.moreviewBtn{text-decoration: none; transition: background 0.2s ease-out; color: #fff; font-size: 18px; font-weight: 400; position: relative; padding: 15px 55px 15px 30px; border-radius: 25px; border: none;}
+.moreviewBtn:after{content: ''; transition: right 0.2s ease-out; position: absolute; right: 30px; top: 50%; transform: translateY(-50%); background: url('../../assets/images/moreviewBtn.png') center / contain no-repeat; width: 16px; height: 21px;}
+.moreviewBtn:hover:after{right: 25px;}
+
+
+.search_box {border-radius: 5px; border: 1px solid #EEEEEE;  height: 40px; width: 225px; display: flex; justify-content: space-between; align-items: center;}
+.search_box input[type="text"] {padding: 0 15px; box-sizing: border-box; height: 40px; border:none; outline:none; background:none; width: calc(100% - 40px);}
+.search_box input[type="text"]::placeholder {color:#CCCCCC; font-size: 14px; font-weight: 400;}
+.search_box button{transition: background 0.2s ease-out; position: relative; background-color: transparent; outline: none; border: none; border-left: 1px solid #EEEEEE; height: 42px; width:40px; border-radius: 0 5px 5px 0;}
+.search_box button:hover{background-color: #9ABD32;}
+.search_box button:after{content: ''; display: block; position: absolute; width: 12px; height: 12px; background: url('../../assets/images/search_icon.png') center / contain no-repeat; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.search_box button:hover:after{background-image: url('../../assets/images/search_icon_hover.png');}
+
+.list_top{margin-bottom: 25px; display: flex; justify-content: space-between;}
+.list_top > div:nth-child(1) span{font-size: 16px; font-weight: 400; color: #999999; line-height: 19px;}
+.list_top > div:nth-child(2){display: flex; align-items: center;}
+.list_top > div:nth-child(2) .selectBox{width: 110px; position: relative;}
+.list_top > div:nth-child(2) .selectBox > span{font-size: 14px; font-weight: 400; color: #666666; cursor: pointer; display: block; border: 1px solid #EEEEEE; border-radius: 5px; padding: 0 15px; box-sizing: border-box; line-height: 40px;}
+.list_top > div:nth-child(2) .selectBox > span:after{content: ''; display: block; background: url('../../assets/images/select.png') center / contain no-repeat; width: 7px; height: 4px; position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
+.list_top > div:nth-child(2) .selectBox .optionBox{position: absolute; left: 0; padding-top: 5px; top: 42px; display: none;}
+.list_top > div:nth-child(2) .selectBox .optionBox > div{background-color: #fff; border: 1px solid #EEEEEE; width: 110px; padding: 12px 15px; box-sizing: border-box; border: 1px solid #EEEEEE; border-radius: 5px;}
+.list_top > div:nth-child(2) .selectBox:hover .optionBox,
+.list_top > div:nth-child(2) .selectBox .optionBox:hover{display: block;}
+.list_top > div:nth-child(2) .selectBox .optionBox span{font-size: 14px; font-weight: 400; color: #666666; cursor: pointer; display: block;}
+.list_top > div:nth-child(2) .selectBox .optionBox span:not(:last-child){margin-bottom: 10px;}
+.list_top > div:nth-child(2) .search_box{margin-left: 5px;}
+/* sort , 검색 Fin */
+
+.pager{display: flex; align-items: center; justify-content: center;}
+.pager .arrow{padding: 0 10px; background-repeat: no-repeat; background-size: contain; background-position: center; width: 6px; height: 11px;}
+.pager .prev{background-image: url('../../assets/images/pager_arrow_prev.png');}
+.pager .next{background-image: url('../../assets/images/pager_arrow_next.png');}
+.pager li{cursor: pointer;}
+.pager li:not(:first-child){margin-left: 10px;}
+.pager li:not(.arrow){width: 25px; line-height: 25px; font-size: 14px; font-weight: 400; color: #666666; text-align: center;}
+.pager li:not(.arrow).active{background-color: #9ABD32; border-radius: 5px; color: #fff; font-weight: 500;}
+/* pager Fin */
+
+.articleListBox{margin-bottom: 25px;}
+.articleListBox > div{cursor: pointer; padding: 35px 50px; box-sizing: border-box;}
+.articleListBox > div:nth-child(1){display: flex; border-top: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE;}
+.articleListBox > div:nth-child(2){display: flex; border-bottom: 1px solid #CCCCCC;}
+.articleListBox > div span{line-height: 20px; text-decoration: none; font-size: 16px;}
+.articleListBox > div span:nth-child(1){font-weight: 600; color: #444444; padding-left: 20px; position: relative;}
+.articleListBox > div span:nth-child(1):before{content: ''; position: absolute; background-repeat: no-repeat; background-position: center; background-size: contain; width: 8px; height: 5px; left: 0; top: 50%; transform: translateY(-50%);}
+.articleListBox > div:nth-child(1) span:nth-child(1):before{background-image: url('../../assets/images/prev_post.png');}
+.articleListBox > div:nth-child(2) span:nth-child(1):before{background-image: url('../../assets/images/next_post.png');}
+.articleListBox > div span:nth-child(2){width: calc(100% - 120px); display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: 50px; color: #666666; font-weight: 400;}
+/* 이전글, 다음글 Fin */
+
+.slide_tabBtnBox{position: relative; height: 49px; display: flex; overflow: hidden; border-radius: 25px; background-color: #F6F6F6;}
+.slide_tabBtnBox:after{transition: left 0.3s ease-out; content: ''; position: absolute; left: 0; top: 0; border-radius: 25px; background-color: #9ABD32; height: 49px;}
+.slide_tabBtnBox button{position: relative; line-height: 49px; border: none; background-color: #F6F6F6; border-radius: 25px;}
+.slide_tabBtnBox button span{width: 100%; height: 49px; font-size: 18px; font-weight: 500; color: #999999; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;}
+/* slide tabBtnBox 공통 Fin */
+
+section:not(.mainSection_1) h2{font-size: 48px; line-height: 68px; font-weight: 800; color: #333333;}
+.mainSection_1{position: relative; background: url('../../assets/images/mainBG.png') center / cover no-repeat; width: 100%; height: 100vh;}
+.mainSection_1 > div{width: 90%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.mainSection_1 h2{margin-bottom: 25px; text-align: center; font-size: 82px; line-height: 100px; font-weight: 800; color: #fff;}
+.mainSection_1 p{margin-bottom: 75px; font-size: 20px; line-height: 32px; color: #fff; text-align: center;}
+.mainSection_1 > div > div{display: flex; justify-content: center;}
+.mainSection_1 .moreviewBtn{background-color: #2A93C9;}
+.mainSection_1 .moreviewBtn:hover{background-color: #0481C0;}
+.mainSection_2{padding: 200px 0 115px 0;}
+.mainSection_2 h2{margin-bottom: 50px;}
+.mainSection_2 h2 span{font-size: 48px; line-height: 68px; color: #008AE6; font-weight: 800;}
+.mainSection_2 > div{border-radius: 20px; overflow: hidden; width: 1520px; margin: 0 auto;}
+.mainSection_3{padding-bottom: 100px;}
+.mainSection_3 > div{display: flex;}
+.mainSection_3 .left{width: 34%; display: flex; flex-wrap: wrap; align-content: space-between;}
+.mainSection_3 .left h2{margin-bottom: 35px;}
+.mainSection_3 .left h2:after{background-color: #008AE6;}
+.mainSection_3 .left p{font-size: 20px; line-height: 32px; color: #555555;}
+.mainSection_3 .left > div{width: 100%;}
+.mainSection_3 .left .arrowBox button{text-indent: -9999px; position: relative; transition: background 0.2s ease-out; background-color: #F9F9F9; width: 52px; height: 52px; border-radius: 100%; border: none;}
+.mainSection_3 .left .arrowBox button:hover{background-color: #008AE6;}
+.mainSection_3 .left .arrowBox button:after{content: ''; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size: contain; background-position: center; width: 14px; height: 20px;}
+.mainSection_3 .left .arrowBox .slick-next:after{background-image: url('../../assets/images/slider_arrow_right.png');}
+.mainSection_3 .left .arrowBox .slick-prev:after{background-image: url('../../assets/images/slider_arrow_left.png');}
+.mainSection_3 .left .arrowBox .slick-next:hover:after{background-image: url('../../assets/images/slider_arrow_right_hover.png');}
+.mainSection_3 .left .arrowBox .slick-prev:hover:after{background-image: url('../../assets/images/slider_arrow_left_hover.png');}
+.mainSection_3 .left .arrowBox button:not(:first-child){margin-left: 10px;}
+.mainSection_3 .right{padding: 20px 0; width: 66%; overflow-x: hidden; display: flex;}
+.mainSection_3 .right li{position: relative; cursor: pointer; margin: 0 10px;}
+.mainSection_3 .right li > a{position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 9;}
+.mainSection_3 .right li .imgBox{border-radius: 20px; overflow: hidden; transition: bottom 0.2s ease-out; height: 375px; position: relative; bottom: 0;}
+.mainSection_3 .right li .imgBox:after{transition: opacity 0.2s ease-out; content: ''; visibility: hidden; opacity: 0; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(255,255,255,0.3); z-index: 1;}
+.mainSection_3 .right:hover li .imgBox:after{visibility: visible; opacity: 1;}
+.mainSection_3 .right li:hover .imgBox:after{visibility: hidden; opacity: 0;}
+.mainSection_3 .right li:hover .imgBox{bottom: 20px;}
+.mainSection_3 .right li .imgBox span{position: absolute; left: 35px; bottom: 30px; font-size: 22px; font-weight: 600; color: #fff;}
+.mainSection_4{padding: 120px 0; background-color: #FBFBFB;}
+.mainSection_4 > div{width: 1520px; margin: 0 auto; display: flex;}
+.mainSection_4 .left{width: 33%;}
+.mainSection_4 .left h2{margin-bottom: 35px;}
+.mainSection_4 .left h2:after{background-color: #9ABD32;}
+.mainSection_4 .moreviewBtn{background-color: #9ABD32;}
+.mainSection_4 .moreviewBtn:hover{background-color: #8BAF20;}
+.mainSection_4 .left p{margin-bottom: 55px; font-size: 20px; font-weight: 400; line-height: 32px; color: #555555;}
+.mainSection_4 .right{border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; width: 67%;}
+.mainSection_4 .right > div{cursor: pointer; display: flex;}
+.mainSection_4 .right > div:not(:last-child){border-bottom: 1px solid #DDDDDD;}
+.mainSection_4 .right > div span{text-align: center;}
+.mainSection_4 .right > div > div:nth-child(1){position: relative; padding: 35px 0; width: 170px;}
+.mainSection_4 .right > div > div:nth-child(1):before{content: ''; display: block; width: 1px; background-color: #DDDDDD; position: absolute; left: 20px;}
+.mainSection_4 .right > div > div:nth-child(1):after{content: ''; display: block; width: 1px; background-color: #DDDDDD; position: absolute; right: 0;}
+.mainSection_4 .right > div > div:nth-child(1) > div{text-align: center; width: calc(100% - 20px); font-size: 14px; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.mainSection_4 .right > div:nth-child(1) > div:nth-child(1):before{height: calc(100% + 20px); top: -20px;}
+.mainSection_4 .right > div:nth-child(2) > div:nth-child(1):before{height: 100%; top: 0;}
+.mainSection_4 .right > div:nth-child(3) > div:nth-child(1):before{height: calc(100% + 20px); top: 0;}
+.mainSection_4 .right > div:nth-child(1) > div:nth-child(1):after{height: calc(100% + 20px); top: -20px;}
+.mainSection_4 .right > div:nth-child(2) > div:nth-child(1):after{height: 100%; top: 0;}
+.mainSection_4 .right > div:nth-child(3) > div:nth-child(1):after{height: calc(100% + 20px); top: 0;}
+.mainSection_4 .right > div > div:nth-of-type(1) > div > span:nth-child(1){display: block; font-size: 62px; font-weight: 600; color: #444444;}
+.mainSection_4 .right > div > div:nth-of-type(1) > div > span:nth-child(2){display: block; font-size: 18px; line-height: 24px; color: #999999; font-weight: 500;}
+.mainSection_4 .right > div > div:nth-child(2){width: calc(100% - 170px); padding-right: 20px; box-sizing: border-box;}
+.mainSection_4 .right > div > div:nth-child(2) > div{position: relative; padding: 35px 30px; box-sizing: border-box;}
+.mainSection_4 .right > div > div:nth-of-type(2) > div:after{content: ''; position: absolute; right: 0; display: block; width: 1px; background-color: #DDDDDD;}
+.mainSection_4 .right > div:nth-of-type(1) > div:nth-of-type(2) > div:after{height: calc(100% + 20px); top: -20px;}
+.mainSection_4 .right > div:nth-of-type(2) > div:nth-of-type(2) > div:after{height: 100%; top: 0;}
+.mainSection_4 .right > div:nth-of-type(3) > div:nth-of-type(2) > div:after{height: calc(100% + 20px); top: 0;}
+.mainSection_4 .right > div > div:nth-child(2) p:nth-child(1){margin-bottom: 15px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; font-size: 20px; font-weight: 600; line-height: 32px; color: #333333;}
+.mainSection_4 .right > div > div:nth-child(2) p:nth-child(2){font-size: 16px; line-height: 24px; color: #666666; font-weight: 400;}
+.mainSection_4 .right > div:hover > div:nth-of-type(1) > div > span:nth-child(1){color: #9ABD32;}
+.mainSection_4 .right > div:hover > div:nth-child(2) p:nth-child(2){text-decoration: underline;}
+/* mainPage Fin */
+
+.subPage:not(.product_introduction),
+.subPage.product_list{padding-top: 180px;}
+.subPage h2{font-weight: 900; font-size: 68px; line-height: 80px;}
+
+
+.sticky{position: sticky; left: 0; top: 200px;}
+
+.subPage .sub_nav{margin-bottom: 35px; display: flex;}
+.subPage .sub_nav > span{font-size: 18px; color: #555555; position: relative;}
+.subPage .sub_nav > span:not(:last-child){font-weight: 500;}
+.subPage .sub_nav > span:last-child{font-weight: 600;}
+.subPage .sub_nav > span:nth-child(1){padding-right: 45px;}
+.subPage .sub_nav > span:nth-child(1):before{content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); display: block; background: url('../../assets/images/home_icon.png') center / contain no-repeat; width: 18px; height: 18px;}
+.subPage .sub_nav > span:not(:last-child):after{content: ''; display: block; width: 6px; height: 10px; background: url('../../assets/images/sub_nav_arrow.png') center / contain no-repeat; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.subPage .sub_nav > span:not(:first-child){margin-left: 20px;}
+.subPage .sub_nav > span:not(:last-child, :first-child){padding-right: 25px;}
+
+.subPage .lnb .btnBox{display: flex;}
+.subPage .lnb .btnBox a:not(:first-child){margin-left: 40px;}
+.subPage .lnb .btnBox a{text-decoration: none; border: none; position: relative; background-color: transparent; font-size: 20px; font-weight: 600; color: #CCCCCC; padding: 10px 0;}
+.subPage .lnb .btnBox a:after{content: ''; display: none; height: 3px; width: 100%; background-color: #9ABD32; position: absolute; bottom: -2px; left: 0;}
+.subPage .lnb .btnBox a.active{color: #9ABD32;}
+.subPage .lnb .btnBox a.active:after{display: block;}
+
+
+
+.aboutUs .lnb,
+.business .lnb,
+.pr_center .lnb,
+.researchAndDevelopment .lnb{border-bottom: 1px solid #EEEEEE;}
+.aboutUs h2,
+.business h2,
+.pr_center h2,
+.sustainability h2,
+.customer_support h2,
+.researchAndDevelopment h2{color: #222222; margin-bottom: 60px;}
+.aboutUs h3,
+.business h3,
+.pr_center h3,
+.researchAndDevelopment h3{font-size: 48px; font-weight: 800; color: #222222; line-height: 68px;}
+
+.aboutUs.ceo_greetings .contentBox,
+.aboutUs.business_site_introduction .contentBox,
+.business .contentBox,
+.researchAndDevelopment .contentBox,
+.pr_center:not(.certification_status, .catalogue, .video) .contentBox{padding: 100px 0 120px 0;}
+.pr_center.video .contentBox{padding: 100px 0 70px 0;}
+
+.aboutUs.ceo_greetings h3,
+.business.research_and_development h3,
+.researchAndDevelopment h3{margin-bottom: 45px;}
+.aboutUs.ceo_greetings .imgBox,
+.business.research_and_development .imgBox{border-radius: 10px; overflow: hidden; margin-bottom: 35px;}
+.aboutUs.ceo_greetings p,
+.business.research_and_development p{font-size: 18px; font-weight: 400; line-height: 30px; color: #222222;}
+.aboutUs.ceo_greetings p:not(:last-of-type),
+.business.research_and_development p:not(:last-of-type){margin-bottom: 35px;}
+
+.aboutUs.ceo_greetings p:last-of-type{margin-bottom: 65px;}
+.aboutUs.ceo_greetings .contentBox > span{font-size: 18px; font-weight: 500; line-height: 30px; color: #444444;}
+.aboutUs.ceo_greetings .contentBox > span > span{font-size: 18px; line-height: 30px; font-weight: 700; color: #444444;}
+/* 회사소개 - CEO 인사말 Fin */
+
+.aboutUs.history .contentBox{padding: 100px 0 300px 0;}
+.aboutUs.history .contentBox > div:after{content: ''; display: block; clear: both;}
+.aboutUs.history .contentBox > div > *{float: left;}
+.aboutUs.history .contentBox > div > .left{width: 17%;}
+.aboutUs.history .contentBox > div > .right{width: 83%;}
+.aboutUs.history .contentBox > div > .right > div{display: none;}
+.aboutUs.history .contentBox > div > .right > div.active{display: block;}
+.aboutUs.history .contentBox > div > .left .tabBtnBox button{display: block; background-color: transparent; border: none; font-size: 24px; font-weight: 700; color: #CCCCCC;}
+.aboutUs.history .contentBox > div > .left .tabBtnBox button:not(:last-child){margin-bottom: 30px;}
+.aboutUs.history .contentBox > div > .left .tabBtnBox button.active{color: #698A08;}
+.aboutUs.history .contentBox > div > .right > div > div{padding: 35px 40px; box-sizing: border-box; border-radius: 20px;}
+.aboutUs.history .contentBox > div > .right > div > div:hover{background-color: #F9F9F9;}
+.aboutUs.history .contentBox > div > .right > div > div > span{display: block; font-size: 24px; font-weight: 700; color: #333333; line-height: 32px; margin-bottom: 25px;}
+.aboutUs.history .contentBox > div > .right > div > div p{font-size: 18px; font-weight: 400; color: #444444; line-height: 32px; padding-left: 35px; position: relative;}
+.aboutUs.history .contentBox > div > .right > div > div p span{position: absolute; left: 0; top: 0; font-size: 18px; color: #9ABD32; font-weight: 700;}
+.aboutUs.history .contentBox > div > .right > div > div p mark{font-size: 16px; font-weight: 400; color: #999999; line-height: 32px; display: block; background-color: transparent; font-style: normal;}
+.aboutUs.history .contentBox > div > .right > div > div > div > p:not(:last-child){margin-bottom: 10px;}
+.aboutUs.history .contentBox > div > .right > div > div > div > p:last-child{margin-bottom: 20px;}
+.aboutUs.history .contentBox > div > .right > div > div > p:not(:last-child){margin-bottom: 20px;}
+/* 회사소개 - 연혁 Fin */
+
+.aboutUs.business_site_introduction .contentBox > div:after{content: ''; display: block; clear: both;}
+.aboutUs.business_site_introduction .contentBox > div > *{float: left;}
+.aboutUs.business_site_introduction .contentBox > div .left{width: 51%;}
+.aboutUs.business_site_introduction .contentBox > div .right{width: 49%;}
+.aboutUs.business_site_introduction .contentBox > div .left h3{margin-bottom: 65px;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li{display: flex;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li:not(:last-child){margin-bottom: 15px;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li span{font-size: 16px; font-weight: 400; line-height: 24px; color: #555555;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li span:nth-child(1){width: 110px; padding-left: 25px; box-sizing: border-box; position: relative;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li span:nth-child(1):before{content: ''; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background-size: contain; background-position: center; background-repeat: no-repeat;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li:nth-child(1) span:nth-child(1):before{background-image: url('../../assets/images/phone.png'); width: 15px; height: 15px;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li:nth-child(2) span:nth-child(1):before{background-image: url('../../assets/images/fax.png'); width: 15px; height: 15px;}
+.aboutUs.business_site_introduction .contentBox > div .left ul li:nth-child(3) span:nth-child(1):before{background-image: url('../../assets/images/mail.png'); width: 15px; height: 12px;}
+
+/* .aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox{position: relative; height: 49px; margin-bottom: 15px; display: flex; overflow: hidden; width: 375px; border-radius: 25px; background-color: #F6F6F6;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox:after{transition: left 0.3s ease-out; content: ''; position: absolute; left: 0; top: 0; width: 50%; border-radius: 25px; background-color: #9ABD32; height: 49px;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox.active:after{left: 50%;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox button{position: relative; line-height: 49px; width: 50%; border: none; background-color: #F6F6F6; border-radius: 25px;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox button span{width: 100%; height: 49px; font-size: 18px; font-weight: 500; color: #666666; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox button:nth-child(1) span,
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox.active button:nth-child(2) span{color: #fff;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabBtnBox.active button:nth-child(1) span{color: #666666;} */
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox{margin-bottom: 15px; width: 375px;}
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox:after{width: 50%;}
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_1:after{left: 0;}
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_2:after{left: 50%;}
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox button{width: 50%;}
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_1 button:nth-child(1) span,
+.aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_2 button:nth-child(2) span{color: #fff;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div{display: none; line-height: 0; border-radius: 10px 10px 0 0; overflow: hidden;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div.active{display: block;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div iframe{width: 100%; height: 380px;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a{display: block; text-decoration: none; cursor: pointer; position: relative; border-radius: 0 0 10px 10px; border-right: 1px solid #EEEEEE; border-left: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE; padding: 25px 30px 25px 50px; box-sizing: border-box; font-size: 16px; line-height: 24px; font-weight: 500; color: #444444;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:hover{text-decoration: underline;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:before{content: ''; display: block; background: url('../../assets/images/map.png') center / contain no-repeat; width: 15px; height: 19px; position: absolute; left: 25px; top: 27px;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:hover:before{background-image: url('../../assets/images/map_active.png');}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:after{transition: right 0.2s ease-out; content: ''; display: block; position: absolute; right: 30px; top: 26px; background: url('../../assets/images/arrow_right.png') center / contain no-repeat; width: 25px; height: 21px;}
+.aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:hover:after{right: 25px;}
+/* 회사소개 - 사업장 소개 Fin */
+
+
+
+.product_introduction.product_list h2{color: #222222;}
+.product_introduction:not(.product_list) h2{margin-bottom: 15px; color: #fff;}
+
+.product_introduction:not(.product_list) .lnb{padding-top: 180px; box-sizing: border-box; background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 1000px;}
+.product_introduction:not(.product_list) .lnb > div > span{margin-bottom: 200px; font-size: 40px; font-weight: 700; line-height: 47px; color: #fff; display: block;}
+.subPage.product_introduction:not(.product_list) .sub_nav > span{color: #fff;}
+.subPage.product_introduction:not(.product_list) .sub_nav > span:not(:last-child):after{background-image: url('../../assets/images/sub_nav_arrow_light.png');}
+
+.product_introduction.double_piping .lnb{background-image: url('../../assets/images/lnb_double_piping.png');}
+.product_introduction.vacuum_insulated_piping .lnb{background-image: url('../../assets/images/lnb_vacuum_insulated_piping.png');}
+.product_introduction.cryogenic_valve .lnb{background-image: url('../../assets/images/lnb_cryogenic_valve.png');}
+.product_introduction.vacuum_jacketed_valve .lnb{background-image: url('../../assets/images/lnb_vacuum_jacketed_valve.png');}
+.product_introduction.cryogenic_container .lnb{background-image: url('../../assets/images/lnb_cryogenic_tank.png');}
+.product_introduction.high_pressure_pump .lnb{background-image: url('../../assets/images/lnb_high_pressure_pump.png');}
+.product_introduction.cryogenic_loading_arm .lnb{background-image: url('../../assets/images/lnb_cryogenic_loading_arm.png');}
+.product_introduction.lh2_fuel_gas_supply_system .lnb{background-image: url('../../assets/images/lnb_LH2_fuel_gas_supply_system.png');}
+
+
+.product_introduction.product_list .contentBox{padding: 100px 0 80px 0;}
+.product_introduction.product_list .contentBox ul{display: flex; flex-wrap: wrap;}
+.product_introduction.product_list .contentBox ul li{position: relative; border-radius: 10px; overflow: hidden; margin-bottom: 40px; width: 23%; box-sizing: border-box; border: 1px solid #EEEEEE; position: relative; border-radius: 10px; overflow: hidden;}
+.product_introduction.product_list .contentBox ul li:not(:nth-child(4n)){margin-right: 2.66%;}
+.product_introduction.product_list .contentBox ul li .thumbBox span{transition: background 0.3s ease-out; position: absolute; right: 10px; top: 10px; width: 50px; height: 50px; border-radius: 100%; background-color: transparent;}
+.product_introduction.product_list .contentBox ul li .thumbBox span:before{transition: background 0.3s ease-out; content: ''; display: block; background-color: #FFF; width: 40px; height: 40px; border-radius: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.product_introduction.product_list .contentBox ul li .thumbBox span:after{transition: background 0.3s ease-out; content: ''; display: block; background: url('../../assets/images/cube_icon.png') center / contain no-repeat; width: 20px; height: 20px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.product_introduction.product_list .contentBox ul li .thumbBox:hover span{background-color: #fff;}
+.product_introduction.product_list .contentBox ul li .thumbBox:hover span:before{background-color: #444444;}
+.product_introduction.product_list .contentBox ul li .thumbBox:hover span:after{content: '3D'; background: none; font-size: 14px; font-weight: 600; color: #fff; width: 40px; height: 40px; line-height: 40px; text-align: center;}
+.product_introduction.product_list .contentBox ul li > div{cursor: pointer;}
+.product_introduction.product_list .contentBox ul li .thumbBox img{width: 100%; height: 100%; object-fit: cover;}
+.product_introduction.product_list .contentBox ul li .txtBox{padding: 0 30px; box-sizing: border-box;} 
+.product_introduction.product_list .contentBox ul li .txtBox a{text-decoration: none; padding: 20px 0; font-size: 18px; line-height: 32px; color: #333333; font-weight: 600; display: block;}
+.product_introduction.product_list .contentBox ul li .txtBox > div{position: relative;}
+.product_introduction.product_list .contentBox ul li .txtBox > div:after{transition: right 0.2s ease-out; content: ''; display: block; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: url('../../assets/images/arrow_right.png') center / contain no-repeat; width: 15px; height: 19px;}
+.product_introduction.product_list .contentBox ul li .txtBox:hover a{text-decoration: underline;}
+.product_introduction.product_list .contentBox ul li .txtBox:hover div:after{right: -5px;}
+.product_introduction.product_list .contentBox ul li .txtBox > div > a{width: calc(100% - 20px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+/* 제품소개 - 제품소개 리스트 Fin */
+
+.product_btnBox{z-index: 999; width: 135px; display: flex; justify-content: right; flex-wrap: wrap; position: fixed; right: 20px; bottom: 95px;}
+.product_btnBox > div:nth-child(1),
+.product_btnBox.active > div:nth-child(1) > button,
+.product_btnBox > div:nth-child(1):hover > button{width: 133px;}
+.product_btnBox > div:nth-child(2),
+.product_btnBox.active > div:nth-child(2) > button,
+.product_btnBox > div:nth-child(2):hover > button{width: 124px;}
+.product_btnBox > div:not(:last-child){margin-bottom: 15px;}
+.product_btnBox > div button{padding: 0; border: none; transition: all 0.5s; float: right; position: relative; width: 52px; height: 52px; display: block; text-align: center; line-height: 52px; text-decoration: none; border-radius: 30px; background-color: #222222;}
+.product_btnBox > div button:before{transition: left 0.2s ease-out; content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size: contain; background-position: center;}
+.product_btnBox > div:nth-child(1) button:before{background-image: url('../../assets/images/invoice_icon.png'); width: 15px; height: 20px;}
+.product_btnBox > div:nth-child(2) button:before{background-image: url('../../assets/images/cube_icon_white.png'); width: 20px; height: 20px;}
+.product_btnBox > div button span{width: 100%; box-sizing: border-box; transition: all 0.3s; opacity: 0; font-size: 0; font-weight: 600; color: #fff;}
+.product_btnBox.active > div button,
+.product_btnBox > div:hover > button{box-sizing: border-box; padding-left: 30px;}
+.product_btnBox.active > div button:before,
+.product_btnBox > div:hover button:before{left: 30px;}
+.product_btnBox.active > div button span,
+.product_btnBox > div:hover > button span{opacity: 1; font-size: 14px; display: block;}
+
+
+
+.product_introduction .customBox{position: relative; display: flex;}
+.product_introduction .customBox .moveBox{position: absolute; width: 100%; height: 100%; display: block;}
+.product_introduction .customBox .moveBox > div{opacity: 0; height: 100%; width: 25%; padding: 10px 0; box-sizing: border-box; position: absolute;}
+.product_introduction .customBox .moveBox > div:nth-child(1){left: 0;}
+.product_introduction .customBox .moveBox > div:nth-child(2){left: 25%;}
+.product_introduction .customBox .moveBox > div:nth-child(3){left: 50%;}
+.product_introduction .customBox .moveBox > div:nth-child(4){left: 75%;}
+.product_introduction .customBox .moveBox > div:after{content: ''; background-color: rgba(255,255,255,0.17); width: 100%; height: calc(100% - 20px); position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.product_introduction .customBox .listBox{width: 25%; position: relative; height: 220px;}
+.product_introduction .customBox .listBox .frameBox{position: absolute; width: 100%; height: 100%;}
+.product_introduction .customBox .listBox .frameBox span{position: absolute; width: 20px; height: 20px; display: block; background: url('../../assets/images/custom_frame.png') center / contain no-repeat;}
+.product_introduction .customBox .listBox .frameBox span.left_top{left: -10px; top: 0;}
+.product_introduction .customBox .listBox .frameBox span.right_top{right: -10px; top: 0;}
+.product_introduction .customBox .listBox .frameBox span.left_bottom{left: -10px; bottom: 0;}
+.product_introduction .customBox .listBox .frameBox span.right_bottom{right: -10px; bottom: 0;}
+.product_introduction .customBox .listBox_1 .frameBox .right_top,
+.product_introduction .customBox .listBox_1 .frameBox .right_bottom,
+.product_introduction .customBox .listBox_2 .frameBox .right_top,
+.product_introduction .customBox .listBox_2 .frameBox .right_bottom,
+.product_introduction .customBox .listBox_3 .frameBox .right_top,
+.product_introduction .customBox .listBox_3 .frameBox .right_bottom{display: none;}
+.product_introduction .customBox .listBox .txtBox{width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.product_introduction .customBox .listBox .txtBox span{display: block; text-align: center; line-height: 32px; font-weight: 600; color: #FFFFFF;}
+.product_introduction .customBox .listBox .txtBox span:nth-child(1){opacity: 0.8; font-size: 18px; margin-bottom: 5px;}
+.product_introduction .customBox .listBox .txtBox span:nth-child(2){font-size: 24px;}
+
+/* 좌->우 애니메이션 */
+/* @keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        left: 0px;
+        opacity: 1;
+    }
+    40%{
+        left: 25%;
+        opacity: 1;
+    }
+    60%{
+        left: 50%;
+        opacity: 1;
+    }
+    80%{
+        left: 75%;
+        opacity: 1;
+    }
+    100%{
+        left: 75%;
+        opacity: 0;
+    }
+} */
+
+/* .product_introduction.double_piping .customBox .moveBox > div{
+    animation-name: fadeInLeft;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+} */
+/* 좌->우 애니메이션 Fin */
+
+/* 나타났다 사라지는 애니메이션 */
+.product_introduction .customBox .moveBox > div:nth-child(1){animation: fadeIn1 8s infinite;}
+.product_introduction .customBox .moveBox > div:nth-child(2){animation: fadeIn2 8s infinite;}
+.product_introduction .customBox .moveBox > div:nth-child(3){animation: fadeIn3 8s infinite;}
+.product_introduction .customBox .moveBox > div:nth-child(4){animation: fadeIn4 8s infinite;}
+
+@keyframes fadeIn1 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn2 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn3 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn4 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* 나타났다 사라지는 애니메이션 Fin */
+
+
+.product_introduction:not(.product_list) .contentBox{padding: 180px 0 120px 0;}
+.product_introduction:not(.product_list) .contentBox h3{margin-bottom: 40px; font-size: 48px; line-height: 68px; color: #222222; font-weight: 800;}
+.product_introduction:not(.product_list) .contentBox h4{font-size: 24px; font-weight: 700; line-height: 32px; color: #698A08; margin-bottom: 25px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox:not(:last-of-type){margin-bottom: 120px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > p{font-size: 18px; font-weight: 400; line-height: 30px; color: #222222;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > p:not(:last-of-type){margin-bottom: 30px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox ul{padding-left: 10px; box-sizing: border-box;}
+.product_introduction.vacuum_insulated_piping .contentBox > .txtBox ul{margin-top: 35px;}
+.product_introduction.vacuum_insulated_piping .contentBox > .txtBox ul{margin-top: 35px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox ul li{font-size: 18px; line-height: 32px; font-weight: 400; color: #555555; position: relative; padding-left: 18px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox ul li:not(:last-of-type){margin-bottom: 15px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox ul li:before{content: '-'; font-size: 18px; font-weight: 600; color: #333333; position: absolute; left: 0; top: 0;}
+.product_introduction:not(.product_list) .contentBox > .txtBox ul li > span{display: inline-block; font-size: 18px; font-weight: 600; color: #333333; line-height: 32px; margin-right: 3px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgBox{max-width: 960px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap,
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgBox{margin-top: 50px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap img,
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgBox img,
+.product_introduction:not(.product_list) .contentBox > .specBox > div .imgBox img{border-radius: 10px;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap{display: flex; justify-content: space-between;}
+.product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap > .imgBox{width: 48%;}
+.product_introduction:not(.product_list) .contentBox > .specBox{margin-bottom: 30px;}
+.product_introduction:not(.product_list) .contentBox > .specBox > span{display: block; font-size: 20px; line-height: 32px; color: #444444; font-weight: 700; margin-bottom: 25px;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div{display: flex; justify-content: space-between;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .imgBox{width: 48%;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .imgBox img{height: 100%; object-fit: cover;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap{width: 50%; margin-left: 2%;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table{height: 100%; width: 100%; border-top: 1px solid #CCCCCC;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr th,
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr td{padding: 25px 30px; box-sizing: border-box; vertical-align: middle; border-bottom: 1px solid #EEEEEE;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr th{width: 260px; text-align: left; font-size: 18px; font-weight: 500; color: #444444; line-height: 26px; background-color: #F9F9F9;}
+.product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr td{font-size: 18px; font-weight: 400; line-height: 26px; color: #555555;}
+.product_introduction:not(.product_list) .contentBox > .btnBox{display: flex; justify-content: space-between;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button{padding: 20px 35px 20px 65px;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button,
+.product_introduction:not(.product_list) .contentBox > .btnBox .productListBtn{transition: background 0.2s ease-out; position: relative; font-size: 18px; font-weight: 600; border-radius: 31px; border: none;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button:before,
+.product_introduction:not(.product_list) .contentBox > .btnBox a:before{content: ''; display: block; position: absolute; height: 20px; left: 35px; top: 50%; transform: translateY(-50%);}
+.product_introduction:not(.product_list) .contentBox > .btnBox button{color: #fff;}
+.product_introduction:not(.product_list) .contentBox > .btnBox .productListBtn{padding: 0 35px 0 65px; line-height: 61px; position: relative; text-decoration: none; background-color: #F9F9F9; color: #999999;}
+.product_introduction:not(.product_list) .contentBox > .btnBox .productListBtn:hover{background-color: #F4F4F4;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.estimateBtn{background-color: #444444;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.estimateBtn:hover{background-color: #333333;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.web3dBtn{background-color: #9ABD32;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.web3dBtn:hover{background-color: #698A08;}
+.product_introduction:not(.product_list) .contentBox > .btnBox .productListBtn:before{background-image: url('../../assets/images/productListBtn.png'); width: 20px;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.estimateBtn:before{background-image: url('../../assets/images/estimateBtn.png'); width: 15px;}
+.product_introduction:not(.product_list) .contentBox > .btnBox button.web3dBtn:before{background-image: url('../../assets/images/web3dBtn.png'); width: 20px;}
+.product_introduction:not(.product_list) .contentBox > .btnBox > div button:not(:first-child){margin-left: 10px;}
+/* 제품소개 - 이중배관 Fin */
+
+.business.research_and_development .contentBox .imgBox img{border-radius: 10px;}
+.business.research_and_development .contentBox .txtBox:not(:last-of-type){margin-bottom: 50px;}
+.business.research_and_development .contentBox .txtBox:last-of-type{margin-bottom: 120px;}
+.business.research_and_development .contentBox .tabBtnWrap{margin: 0 auto 100px;}
+.business.research_and_development .contentBox .slide_tabBtnBox{margin: 0 auto; background-color: #F6F6F6; border-radius: 25px; width: 980px; position: relative; display: flex; justify-content: center;}
+.business.research_and_development .contentBox .slide_tabBtnBox:after{content: ''; transition: left 0.2s ease-out; z-index: 9; position: absolute; top: 50%; transform: translateY(-50%); display: block; border-radius: 25px; height: 50px; width: 20%; background-color: #9ABD32;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_1:after{left: 0;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_2:after{left: 20%;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_3:after{left: 40%;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_4:after{left: 60%;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_5:after{left: calc(80%); width: calc(20% + 50px);}
+.business.research_and_development .contentBox .slide_tabBtnBox button{padding: 0; position: relative; width: 20%; height: 50px; border: none; background-color: transparent; font-size: 18px; font-weight: 500; color: #999999;}
+.business.research_and_development .contentBox .slide_tabBtnBox button span{z-index: 99; width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.business.research_and_development .contentBox .slide_tabBtnBox button.active span{color: #fff;}
+.business.research_and_development .contentBox .slide_tabBtnBox button:last-child{padding: 0 20px;}
+.business.research_and_development .contentBox .slide_tabBtnBox button:last-child:after{content: ''; display: block; background-color: #F6F6F6; height: 50px; width: 100%; border-radius: 0 25px 25px 0; position: absolute; right: -25px; top: 0;}
+.business.research_and_development .contentBox .slide_tabBtnBox.active_1 button:nth-child(1),
+.business.research_and_development .contentBox .slide_tabBtnBox.active_2 button:nth-child(2),
+.business.research_and_development .contentBox .slide_tabBtnBox.active_3 button:nth-child(3),
+.business.research_and_development .contentBox .slide_tabBtnBox.active_4 button:nth-child(4),
+.business.research_and_development .contentBox .slide_tabBtnBox.active_5 button:nth-child(5){color: #fff;}
+.business.research_and_development .contentBox .tabContentBox > div{display: none;}
+.business.research_and_development .contentBox .tabContentBox > div.active{display: block;}
+.business.research_and_development .contentBox .tabContentBox ul li{border-radius: 20px; padding: 35px 45px; box-sizing: border-box;}
+.business.research_and_development .contentBox .tabContentBox ul li:hover{background-color: #F9F9F9;}
+.business.research_and_development .contentBox .tabContentBox ul li h4{font-size: 24px; font-weight: 700; color: #333333; line-height: 32px;}
+.business.research_and_development .contentBox .tabContentBox ul li span:first-of-type{margin-top: 25px;}
+.business.research_and_development .contentBox .tabContentBox ul li span{font-size: 18px; font-weight: 400; display: block; line-height: 32px; color: #444444; position: relative; padding-left: 20px; box-sizing: border-box;}
+.business.research_and_development .contentBox .tabContentBox ul li span:before{content: '-'; font-size: 18px; font-weight: 400; color: #444444; position: absolute; left: 0; top: 0;}
+.business.research_and_development .contentBox .tabContentBox ul li span:not(:last-of-type){margin-bottom: 10px;}
+/* 비즈니스 - R&D Fin */
+
+
+.business:not(.research_and_development) .contentBox > div > *{float: left;}
+.business:not(.research_and_development) .contentBox > div:after{content: ''; display: block; clear: both;}
+.business:not(.research_and_development) .contentBox .right p{font-size: 18px; font-weight: 400; line-height: 30px; color: #222222;}
+.stickyBox{position: sticky; top: 200px; left: 0;}
+
+
+.business.solution_introduction .contentBox .left h3{margin-bottom: 45px;}
+.business.solution_introduction .contentBox .left h3 span{display: block;}
+.business.solution_introduction .contentBox .left{width: 17%;}
+.business.solution_introduction .contentBox .left .tabBtnBox li{cursor: pointer; font-size: 24px; font-weight: 700; color: #CCCCCC; line-height: 32px;}
+.business.solution_introduction .contentBox .left .tabBtnBox li:not(:last-child){margin-bottom: 20px;}
+.business.solution_introduction .contentBox .left .tabBtnBox li.active{color: #698A08;}
+.business.solution_introduction .contentBox .right{width: 83%;}
+.business.solution_introduction .contentBox .right > div{display: none;}
+.business.solution_introduction .contentBox .right > div.active{display: block;}
+.business.solution_introduction .contentBox .right .imgBox{margin-bottom: 35px;}
+.business.solution_introduction .contentBox .right .txtBox p:not(:last-of-type){margin-bottom: 30px;}
+/* 비즈니스 - 솔루션소개 Fin */
+
+.business.business_areas .contentBox .left{padding-right: 14%; box-sizing: border-box; width: 52%;}
+.business.business_areas .contentBox .right{width: 48%;}
+.business.business_areas .contentBox .right .imgBox:not(:last-of-type){margin-bottom: 60px;}
+.business.business_areas .contentBox .right .imgBox img{margin-bottom: 25px;}
+/* 비즈니스 - 사업분야 Fin */
+
+.pr_center.notice .contentBox{padding: 80px 0 120px 0;}
+.pr_center.notice .contentBox .tableWrap{margin-bottom: 30px;}
+.pr_center.notice .contentBox .tableWrap table{border-top: 1px solid #EEEEEE; width: 100%;}
+.pr_center.notice .contentBox .tableWrap table thead tr th,
+.pr_center.notice .contentBox .tableWrap table tbody tr td{border-bottom: 1px solid #EEEEEE; padding: 25px 0;}
+.pr_center.notice .contentBox .tableWrap table thead tr th{background-color: #FBFBFB; font-size: 18px; font-weight: 600; color: #444444;}
+.pr_center.notice .contentBox .tableWrap table tbody tr td{cursor: pointer; font-size: 16px; font-weight: 400; color: #555555; line-height: 19px;}
+.pr_center.notice .contentBox .tableWrap table tbody tr td a{text-decoration: none; color: #555555; width: 900px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.pr_center.notice .contentBox .tableWrap table tbody tr:hover td a{text-decoration: underline; color: #698A08;}
+.pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(1){width: 115px;}
+.pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(2){width: 1065px;}
+.pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(3){width: 150px; text-align: left;}
+.pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(4){width: 150px;}
+.pr_center.notice .contentBox .tableWrap table tbody tr td:nth-child(1),
+.pr_center.notice .contentBox .tableWrap table tbody tr td:nth-child(4){text-align: center;}
+/* 홍보센터 - 공지사항 Fin */
+
+.pr_center.view .contentBox > div{width: 1200px; margin: 0 auto;}
+.pr_center.view .contentBox > div .titleBox{padding-bottom: 25px; border-bottom: 1px solid #EEEEEE;}
+.pr_center.view .contentBox > div .titleBox h3{margin-bottom: 10px;}
+.pr_center.view .contentBox > div .titleBox span{font-size: 16px; line-height: 24px; color: #999999; font-weight: 400; display: block;}
+.pr_center.view .contentBox > div .txtBox{padding: 40px 0 85px 0;}
+.pr_center.view .contentBox > div .txtBox p{font-size: 18px; font-weight: 400; line-height: 24px; color: #666666;}
+.pr_center.view .contentBox > div .txtBox p:not(:last-of-type){margin-bottom: 25px;}
+.pr_center.view .contentBox > div .btnBox{display: flex; justify-content: center;}
+.pr_center.view .contentBox > div .btnBox a{text-decoration: none; background-color: #444444; border-radius: 5px; color: #fff; font-size: 17px; font-weight: 400; padding: 10px 25px;}
+.pr_center.view .videoBox{border-radius: 0; margin-bottom: 30px; display: block; width: 100%;}
+.pr_center.view .videoBox > div{position: relative; padding-bottom: 56.25%;}
+.pr_center.view .videoBox > div iframe{position: absolute; width: 100%; height: 100%;}
+.pr_center.view .imgBox{margin: 60px auto;}
+.pr_center.view .imgBox.width_700{max-width: 700px;}
+.pr_center.view .imgBox span,
+.pr_center.view .videoWrap{margin-top: 60px;}
+.pr_center.view .videoBox span{margin-top: 15px; font-size: 16px; line-height: 24px; color: #999999; font-weight: 400; display: block; text-align: center;}
+.pr_center.view .link{cursor: pointer; margin-top: 40px; display: block; font-size: 18px; font-weight: 400; line-height: 24px; color: #008AE6; text-decoration: underline;}
+/* 홍보센터 - 공지사항 view Fin */
+
+.pr_center.certification_status .contentBox{padding: 100px 0 85px 0;}
+.pr_center.certification_status .contentBox > div > *{float: left;}
+.pr_center.certification_status .contentBox > div:after{content: ''; display: block; clear: both;}
+.pr_center.certification_status .contentBox > div .left{padding-right: 12%; box-sizing: border-box; width: 51%;}
+.pr_center.certification_status .contentBox > div .right{width: 49%;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnWrap{margin-bottom: 30px;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox{width: 330px;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox:after{width: 33.33%;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_1:after{left: 0;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_2:after{left: 33.33%;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_3:after{left: 66.66%;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox button{width: 33.33%;}
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_1 button:nth-child(1) span,
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_2 button:nth-child(2) span,
+.pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_3 button:nth-child(3) span{color: #fff;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox > div{display: none;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox > div.active{display: block;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul{display: flex; flex-wrap: wrap;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li{cursor: pointer; margin-bottom: 35px; overflow: hidden; width: 30.33%;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li:not(:nth-child(3n)){margin-right: 4.5%;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li .imgBox{margin-bottom: 10px; border: 1px solid #EEEEEE; box-sizing: border-box; border-radius: 5px; overflow: hidden; height: auto; overflow: hidden;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li .imgBox img{transition: transform 0.2s ease-out; object-fit: cover; margin-bottom: 10px;}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li:hover .imgBox img{transform: scale(1.1);}
+.pr_center.certification_status .contentBox > div .right .tabContentBox ul li > span{word-break: keep-all; text-align: center; display: block; font-size: 15px; line-height: 22px; color: #666666; font-weight: 500;}
+
+/* 모달창 */
+.certification_modal.active{display: block;}
+.certification_modal{display: none; z-index: 9999; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+.certification_modal > div{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 80%; max-width: 610px;}
+.certification_modal > div img{width: 100%; height: 100%; object-fit: cover; display: block; margin: 0 auto 15px;}
+.certification_modal > div span{display: block; color: #fff; font-size: 18px; text-align: center;}
+.certification_modal button{border: none; right: 10px; top: 10px; position: absolute; width: 30px; height: 30px; border-radius: 3px; background-color: #9ABD32;}
+.certification_modal button:after{content: ''; display: block; position: absolute; z-index: 1; width: 13px; height: 13px; background: url('../../assets/images/closeBtn.png') center / contain no-repeat; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+/* 모달창 Fin */
+/* 홍보센터 - 인증현황 Fin */
+
+.pr_center.catalogue .contentBox{padding: 100px 0 85px;}
+.pr_center.catalogue .contentBox ul{display: flex; flex-wrap: wrap;}
+.pr_center.catalogue .contentBox ul li{cursor: pointer; width: 23%; margin-bottom: 35px;}
+.pr_center.catalogue .contentBox ul li:not(:nth-child(4n)){margin-right: 2.66%;}
+.pr_center.catalogue .contentBox ul li .imgBox{border-radius: 5px; overflow: hidden; margin-bottom: 20px; height: auto;}
+.pr_center.catalogue .contentBox ul li .imgBox img{object-fit: cover; height: 100%;}
+.pr_center.catalogue .contentBox ul li > span{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; font-size: 18px; font-weight: 600; color: #333333; line-height: 30px;}
+/* 홍보센터 - 전자 카탈로그 Fin */
+
+.pr_center.video .contentBox > .videoBox{margin-bottom: 70px;}
+.pr_center.video .contentBox > ul{display: flex; flex-wrap: wrap;}
+.pr_center.video .contentBox > ul li{margin-bottom: 50px; width: 32.33%;}
+.pr_center.video .contentBox > ul li:not(:nth-child(3n)){margin-right: 1.5%;}
+.pr_center.video .contentBox > ul li .videoBox{margin-bottom: 20px;}
+.pr_center.video .contentBox > ul li span{font-size: 18px; font-weight: 600; color: #333333; line-height: 30px;}
+
+.videoBox{border-radius: 10px; overflow: hidden; display: block; width: 100%;}
+.videoBox > div{position: relative; padding-bottom: 56.25%;}
+.videoBox > div iframe{position: absolute; width: 100%; height: 100%;}
+/* 홍보센터 - 영상자료 Fin */
+
+.pr_center.blog .contentBox ul{display: flex; flex-wrap: wrap;}
+.pr_center.blog .contentBox ul li{position: relative; cursor: pointer; margin-bottom: 75px; padding-bottom: 40px; position: relative; width: 23%;}
+.pr_center.blog .contentBox ul li > a{position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 9;}
+.pr_center.blog .contentBox ul li:not(:nth-child(4n)){margin-right: 2.66%;}
+.pr_center.blog .contentBox ul li .imgBox{height: auto; border: 1px solid #EEEEEE; border-radius: 5px; overflow: hidden; margin-bottom: 10px;}
+.pr_center.blog .contentBox ul li .imgBox:hover img{transform: scale(1.1);}
+.pr_center.blog .contentBox ul li .imgBox img{transition: transform 0.2s ease-out; height: 100%; object-fit: cover;}
+.pr_center.blog .contentBox ul li > p{font-size: 18px; font-weight: 600; color: #333333; line-height: 30px;}
+.pr_center.blog .contentBox ul li:hover > p{text-decoration: underline;}
+.pr_center.blog .contentBox ul li > span{position: absolute; left: 0; bottom: 0; font-size: 16px; line-height: 24px; color: #999999; font-weight: 400;}
+/* 홍보센터 - 블로그 Fin */
+
+
+.sustainability .contentBox{padding: 40px 0 120px 0;}
+.sustainability .contentBox .slide_tabBtnWrap{margin-bottom: 35px;}
+.sustainability .contentBox .slide_tabBtnBox{width: 412px;}
+.sustainability .contentBox .slide_tabBtnBox.active_1:after{width: 40%; left: 0;}
+.sustainability .contentBox .slide_tabBtnBox.active_2:after{width: 60%; left: 40%;}
+.sustainability .contentBox .slide_tabBtnBox button:nth-child(1){width: 40%;}
+.sustainability .contentBox .slide_tabBtnBox button:nth-child(2){width: 60%;}
+.sustainability .contentBox .slide_tabBtnBox.active_1 button:nth-child(1) span,
+.sustainability .contentBox .slide_tabBtnBox.active_2 button:nth-child(2) span{color: #fff;}
+.sustainability .contentBox .tabContentBox{margin-bottom: 120px;}
+.sustainability .contentBox .tabContentBox > div{display: none;}
+.sustainability .contentBox .tabContentBox > div.active{display: block;}
+.sustainability .contentBox .tabContentBox .imgBox{position: relative; border-radius: 10px;}
+.sustainability .contentBox .tabContentBox .imgBox img{margin-bottom: 35px;}
+.sustainability .contentBox .tabContentBox .imgBox span{width: 100%; text-align: center; position: absolute; font-size: 48px; font-weight: 800; color: #fff; line-height: 68px; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.sustainability .contentBox .tabContentBox > div > p{font-size: 18px; font-weight: 400; line-height: 30px; color: #222222;}
+.sustainability .contentBox h3{margin-bottom: 25px; font-size: 48px; font-weight: 800; color: #222222; line-height: 68px;}
+.sustainability .contentBox h3 span{margin-top: 30px; display: block; font-size: 24px; font-weight: 700; color: #698A08; line-height: 32px;}
+.sustainability .contentBox .grayBox{padding: 35px 45px; box-sizing: border-box; background-color: #F9F9F9; border-radius: 20px;}
+.sustainability .contentBox .grayBox ol li{position: relative; padding-left: 35px; font-size: 18px; font-weight: 400; line-height: 32px; color: #444444;}
+.sustainability .contentBox .grayBox ol li:not(:last-child){margin-bottom: 10px;}
+.sustainability .contentBox .grayBox ol li span{font-weight: 600; font-size: 18px; line-height: 32px; color: #333333; margin-right: 10px;}
+.sustainability .contentBox .grayBox ol li:before{display: block; position: absolute; left: 0; top: 0; font-size: 18px; font-weight: 700; line-height: 32px;}
+.sustainability .contentBox .grayBox ol:nth-of-type(1){padding-bottom: 35px; margin-bottom: 35px;
+    background-image: linear-gradient(to right, #DDDDDD 55%,
+    rgba(255,255,255,0) 0%);
+    background-position: bottom; 
+    background-size: 10px 1px;/*점선 간격 수정*/
+    background-repeat: repeat-x;
+}
+.sustainability .contentBox .grayBox ol:nth-of-type(1) li:before{color: #9ABD32;}
+.sustainability .contentBox .grayBox ol:nth-of-type(2) li:before{color: #008AE6;}
+.sustainability .contentBox .grayBox ol li:nth-child(1):before{content: '01';}
+.sustainability .contentBox .grayBox ol li:nth-child(2):before{content: '02';}
+.sustainability .contentBox .grayBox ol li:nth-child(3):before{content: '03';}
+.sustainability .contentBox .grayBox ol li:nth-child(4):before{content: '04';}
+.sustainability .contentBox .grayBox ol li:nth-child(5):before{content: '05';}
+/* 지속가능경영 Fin */
+
+.customer_support .contentBox{padding: 20px 0 120px 0;}
+.customer_support fieldset{min-width: 0;}
+.customer_support fieldset .tableWrap table{width: 100%;}
+.customer_support fieldset .tableWrap table label{cursor: pointer;}
+.customer_support fieldset .tableWrap:nth-of-type(1){margin-bottom: 65px; padding: 50px 60px; box-sizing: border-box; border: 1px solid #EEEEEE; border-radius: 20px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr th,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr:not(:last-of-type) td{padding-bottom: 30px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr th{vertical-align: top; padding-top: 12px; width: 170px; text-align: left;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr th label{font-size: 17px; line-height: 23px; color: #555555; font-weight: 600;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox{position: relative; width: 100%;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox input,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td select{color: #666666; font-size: 15px; font-weight: 400; line-height: 23px; width: 100%; outline: none; border-radius: 12px; padding: 15px 24px; box-sizing: border-box; border: 1px solid #DDDDDD;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox.active label{color: transparent;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox input.readonly{position: absolute; left: 0; top: 0; z-index: -1;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox input:focus,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox input:valid,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .textAreaBox textarea:focus,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .textAreaBox textarea:valid{border-color: #AAAAAA;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .inputBox input::placeholder{font-size: 15px; font-weight: 400; line-height: 23px; color: #CCCCCC;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .textAreaBox textarea{line-height: 23px; color: #666666; font-size: 15px; font-weight: 400; margin-bottom: 12px; padding: 19px 24px; outline: none; box-sizing: border-box; border: 1px solid #DDDDDD; border-radius: 12px; height: 250px; width: 100%; resize: none;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .textAreaBox textarea::placeholder{font-size: 15px; line-height: 23px; color: #CCCCCC; font-weight: 400;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody tr td .textAreaBox span{display: block; font-size: 15px; font-weight: 400; color: #777777; line-height: 23px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(1) tr:last-of-type th,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(1) tr:last-of-type td,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(2) tr:last-of-type th,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(2) tr:last-of-type td{padding-bottom: 50px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(2) tr:nth-child(1) td,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(3) tr:nth-child(1) td{padding-top: 50px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(2) tr:nth-child(1) th,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(3) tr:nth-child(1) th{padding-top: 62px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(1) tr:last-of-type,
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(2) tr:nth-child(2){
+    background-image: linear-gradient(to right, #DDDDDD 55%,
+    rgba(255,255,255,0) 0%);
+    background-position: bottom; 
+    background-size: 10px 1px;/*점선 간격 수정*/
+    background-repeat: repeat-x;
+}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(3) tr input[type="file"]{display: none;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(3) tr td label{font-size: 15px; font-weight: 400; color: #CCCCCC; line-height: 23px; box-sizing: border-box; display: block; border: 1px solid #DDDDDD; border-radius: 12px; width: 100%; padding: 15px 24px;}
+.customer_support fieldset .tableWrap:nth-of-type(1) table tbody:nth-of-type(3) .readonly label{font-size: ; border: 1px solid #AAAAAA; color: #666666; font-size: 15px; font-weight: 400; line-height: 23px;}
+
+/* select custom */
+select::-ms-expand{
+    display: none;
+}
+
+.select{
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    background: url('../../assets/images/select_arrow.png') calc(100% - 25px) center / contain no-repeat;
+    background-size: 8px;
+    outline: none;
+    cursor: pointer;
+    height: 57px;
+    font-size: 15px; font-weight: 400; color: #CCCCCC;
+}
+
+.select option{
+    font-size: 15px; font-weight: 400; color: #555555;
+}
+/* select custom */
+
+.customer_support fieldset .tableWrap:nth-of-type(2){margin-bottom: 30px;}
+.customer_support fieldset .tableWrap:nth-of-type(2) > span{display: block; margin-bottom: 20px; font-size: 19px; line-height: 36px; font-weight: 700; color: #444444;} 
+.customer_support fieldset .tableWrap:nth-of-type(2) table{border-top: 1px solid #999999;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table thead tr th,
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td{border-bottom: 1px solid #EEEEEE; padding: 20px 25px; box-sizing: border-box;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table thead tr th{text-align: left; font-size: 16px; font-weight: 400; color: #666666; background-color: #FBFBFB;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table thead tr th:nth-child(1),
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr:not(:last-of-type) td:nth-child(1){width: 330px; border-right: 1px solid #EEEEEE;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td{font-size: 16px; font-weight: 400; color: #666666;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td > div{display: flex; justify-content: space-between;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox{display: flex; align-items: center;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox > div:not(:first-child){margin-left: 30px;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox input[type="radio"]{display: none;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox label{padding-left: 17px; font-size: 14px; line-height: 16px; font-weight: 400; color: #666666; position: relative;}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox label:before{content: ''; display: block; background: url('../../assets/images/radio.png') center / contain no-repeat; width: 10px; height: 10px; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.customer_support fieldset .tableWrap:nth-of-type(2) table tbody tr td .radioBox input[type="radio"]:checked + label:before{background-image: url('../../assets/images/radio_checked.png');}
+
+.customer_support fieldset .btnBox{display: flex; justify-content: center;}
+.customer_support fieldset .btnBox button{transition: background 0.2s ease-out; padding: 20px 35px; border-radius: 31px; background-color: #444444; font-size: 18px; font-weight: 600; color: #fff; border: none;}
+.customer_support fieldset .btnBox button:hover{background-color: #333333;}
+/* 고객지원 Fin */
+
+
+.siteMap h2{margin-bottom: 60px;}
+.siteMap .contentBox > ul{display: flex; flex-wrap: wrap;}
+.siteMap .contentBox > ul > li{margin-bottom: 120px; width: 23%;}
+.siteMap .contentBox > ul > li:not(:nth-child(4n)){margin-right: 2.66%;}
+.siteMap .contentBox > ul > li > span,
+.siteMap .contentBox > ul > li > a{margin-bottom: 18px; padding-bottom: 15px; color: #9ABD32; font-size: 19px; font-weight: 500; line-height: 22px; display: block; border-bottom: 1px solid #9ABD32;}
+.siteMap .contentBox > ul > li > a{text-decoration: none;}
+.siteMap .contentBox > ul > li:nth-child(5) > span,
+.siteMap .contentBox > ul > li:nth-child(6) > span{cursor: pointer;}
+.siteMap .contentBox > ul > li:nth-child(5) > span:hover,
+.siteMap .contentBox > ul > li:nth-child(6) > span:hover{color: #698A08;}
+.siteMap .contentBox > ul > li > ul > li{cursor: pointer;}
+.siteMap .contentBox > ul > li > ul > li a{display: block; text-decoration: none; font-size: 17px; font-weight: 400; color: #666666; line-height: 20px;}
+.siteMap .contentBox > ul > li > ul > li:not(:last-child){margin-bottom: 18px;}
+.siteMap .contentBox > ul > li > ul > li:hover{color: #444444;}
+/* 사이트맵 Fin */
+
+.researchAndDevelopment .contentBox > ol{margin-bottom: 65px; background-color: #F9F9F9; border-radius: 20px; padding: 35px 45px; box-sizing: border-box;}
+.researchAndDevelopment .contentBox > ol li{letter-spacing: -0.5px; font-size: 18px; font-weight: 400; line-height: 32px; color: #444444; padding-left: 35px; position: relative;}
+.researchAndDevelopment .contentBox > ol li:not(:last-child){margin-bottom: 10px;}
+.researchAndDevelopment .contentBox > ol li span{display: inline-block; position: absolute; left: 0; top: 0; font-size: 18px; font-weight: 700; color: #9ABD32;}
+.researchAndDevelopment .contentBox > ul{display: flex; justify-content: space-between}
+.researchAndDevelopment .contentBox > ul li{width: 24%;}
+/* 연구개발 공통 Fin */
+
+.researchAndDevelopment.vision .contentBox > div{display: flex;}
+.researchAndDevelopment.vision .contentBox .left{padding-right: 18%; box-sizing: border-box; width: 60%;}
+.researchAndDevelopment.vision .contentBox .right{width: 40%;}
+.researchAndDevelopment.vision .contentBox .left p{letter-spacing: -0.5px; font-size: 18px; font-weight: 400; line-height: 30px; color: #222222;}
+/* 비전·목표 Fin */
+
+.researchAndDevelopment.design .contentBox > p{letter-spacing: -0.5px; font-size: 18px; font-weight: 400; line-height: 30px; color: #222222; margin-bottom: 30px;}
+.researchAndDevelopment.design .contentBox > ul li .imgBox{margin-bottom: 15px;}
+.researchAndDevelopment.design .contentBox > ul li span{font-size: 18px; font-weight: 500; line-height: 32px; letter-spacing: -0.5px; color: #444444; display: block; text-align: center;}
+/* 설계 Fin */
+
+.researchAndDevelopment.technology .contentBox{padding: 80px 0 120px 0;}
+.researchAndDevelopment.technology .contentBox > div{margin-bottom: 65px;}
+.researchAndDevelopment.technology .contentBox > div > p{font-size: 18px; font-weight: 400; line-height: 30px; letter-spacing: -0.5px; color: #222222;}
+.researchAndDevelopment.technology .contentBox > div > p:not(:last-child){margin-bottom: 30px;}
+.researchAndDevelopment.technology .contentBox .tableWrap table{border-top: 1px solid #999999; width: 100%;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td{border-bottom: 1px solid #EEEEEE; padding: 25px 0;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td{cursor: pointer; font-size: 16px; font-weight: 400; color: #555555; line-height: 19px;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td p{width: 900px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr:hover td p{text-decoration: underline; color: #698A08;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td:nth-child(1){width: 115px; text-align: center;}
+.researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td:nth-child(3){font-size: 16px; font-weight: 400; color: #999999; line-height: 19px; padding-right: 40px; box-sizing: border-box; width: 140px; text-align: right;}
+/* 기술개발 Fin */
+
+@media (max-width:1600px){
+    .mainSection_2 h2,
+    .mainSection_2 > div,
+    .mainSection_3,
+    .mainSection_4 > div,
+    .subPage .lnb > div,
+    .subPage .contentBox,
+    .aboutUs .contentBox,
+    .pr_center.view .contentBox > div{width: 90%;}
+
+
+    /* mainPage Fin */
+
+    .aboutUs.history .contentBox > div > .left{width: 25%;}
+    .aboutUs.history .contentBox > div > .right{width: 75%;}
+    
+    .product_introduction.product_list .contentBox ul li{width: 31.33%;}
+    .product_introduction.product_list .contentBox ul li:not(:nth-child(4n)){margin-right: 0;}
+    .product_introduction.product_list .contentBox ul li:not(:nth-child(3n)){margin-right: 3%;}
+
+    .business.research_and_development .contentBox .slide_tabBtnBox{width: 100%;}
+
+    .pr_center.notice .contentBox .tableWrap{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .pr_center.notice .contentBox .tableWrap table{width: 1480px;}
+    .pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(1),
+    .pr_center.notice .contentBox .tableWrap table tbody tr td:nth-child(1),
+    .researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td:nth-child(1){position: sticky; left: 0; top: 0; z-index: 1;}
+    .pr_center.notice .contentBox .tableWrap table tbody tr td:nth-child(1),
+    .researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td:nth-child(1){background-color: #fff;}
+    .pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(2){text-align: left;}
+
+    .pr_center h3 br{display: none;}
+    .pr_center.certification_status .contentBox > div .right .tabContentBox ul li{width: 48%;}
+    .pr_center.certification_status .contentBox > div .right .tabContentBox ul li:not(:nth-child(3n)){margin-right: 0;}
+    .pr_center.certification_status .contentBox > div .right .tabContentBox ul li:not(:nth-child(2n)){margin-right: 4%;}
+
+    .pr_center.catalogue .contentBox ul li{width: 32.33%;}
+    .pr_center.catalogue .contentBox ul li:not(:nth-child(4n)){margin-right: 0;}
+    .pr_center.catalogue .contentBox ul li:not(:nth-child(3n)){margin-right: 1.5%;}
+
+    .researchAndDevelopment.vision .contentBox .left{padding-right: 5%;}
+
+    .researchAndDevelopment.technology .contentBox .tableWrap table tbody tr td p{width: 600px;}
+}
+
+
+@media (max-width:1024px){
+    .sticky{position: static;}
+
+    .mainSection_3 > div{flex-wrap: wrap;}
+    .mainSection_3 .left,
+    .mainSection_3 .right{width: 100%;}
+    .mainSection_3 .left > div:nth-of-type(1){margin-bottom: 30px;}
+    .mainSection_3 .left > div:nth-of-type(2){margin-bottom: 20px;}
+    .mainSection_3 .right{margin-left: 0;}
+    /* mainPage Fin */
+    
+    .subPage h2{font-size: 48px; line-height: 60px;}
+    .product_introduction:not(.product_list) .contentBox h3,
+    .aboutUs h3,
+    .business h3,
+    .pr_center h3,
+    .sustainability .contentBox h3,
+    .researchAndDevelopment h3{font-size: 38px; line-height: 58px;}
+
+    .aboutUs.history .contentBox > div > .left{margin-bottom: 30px;}
+    .aboutUs.business_site_introduction .contentBox > div > *,
+    .business:not(.research_and_development) .contentBox > div > *,
+    .pr_center.certification_status .contentBox > div > *{float: none;}
+    .stickyBox{position: static;}
+    .aboutUs.business_site_introduction .contentBox > div .left,
+    .aboutUs.business_site_introduction .contentBox > div .right,
+    .business.solution_introduction .contentBox .left,
+    .business.solution_introduction .contentBox .right,
+    .business.business_areas .contentBox .left,
+    .business.business_areas .contentBox .right,
+    .pr_center.certification_status .contentBox > div .left,
+    .pr_center.certification_status .contentBox > div .right{width: 100%;}
+    .aboutUs.business_site_introduction .contentBox > div .left{margin-bottom: 50px;}
+    .aboutUs.business_site_introduction .contentBox > div .left h3{margin-bottom: 35px;}
+    .slide_tabBtnWrap{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_1 button:nth-child(1),
+    .aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_2 button:nth-child(2){order: -1;}
+    .aboutUs.business_site_introduction .contentBox > div .right .slide_tabBtnBox.active_2:after{left: 0;}
+    .aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a{padding: 25px 30px 25px 50px;}
+    .aboutUs.business_site_introduction .contentBox > div .right .tabContentBox > div a:after{right: 10px;}
+
+    .product_introduction.product_list .contentBox ul li{width: 48%;}
+    .product_introduction.product_list .contentBox ul li:not(:nth-child(3n)){margin-right: 0;}
+    .product_introduction.product_list .contentBox ul li:not(:nth-child(2n)){margin-right: 4%;}
+
+    
+    .product_introduction:not(.product_list) .lnb > div > span{margin-bottom: 100px;}
+    .product_introduction .customBox{flex-wrap: wrap;}
+    .product_introduction .customBox .listBox{width: 50%;}
+    .product_introduction .customBox .moveBox > div{width: 50%; height: 50%;}
+    .product_introduction .customBox .moveBox > div:nth-child(1){left: 0; top: 0;}
+    .product_introduction .customBox .moveBox > div:nth-child(2){left: 50%; top: 0;}
+    .product_introduction .customBox .moveBox > div:nth-child(3){left: 0; top: calc(50% - 10px);}
+    .product_introduction .customBox .moveBox > div:nth-child(4){left: 50%; top: calc(50% - 10px);}
+    .product_introduction .customBox .listBox_2 .frameBox span.right_top,
+    .product_introduction .customBox .listBox_2 .frameBox span.right_bottom,
+    .product_introduction .customBox .listBox_3 .frameBox span.left_bottom{display: block;}
+    .product_introduction .customBox .listBox_3 .frameBox span.right_top,
+    .product_introduction .customBox .listBox_3 .frameBox span.right_bottom,
+    .product_introduction .customBox .listBox_3 .frameBox span.left_top,
+    .product_introduction .customBox .listBox_4 .frameBox span.left_top,
+    .product_introduction .customBox .listBox_4 .frameBox span.right_top{display: none;}
+    .product_introduction .customBox .listBox_3 .frameBox span.left_bottom,
+    .product_introduction .customBox .listBox_4 .frameBox span.left_bottom,
+    .product_introduction .customBox .listBox_4 .frameBox span.right_bottom{bottom: 20px;}
+    .product_introduction .customBox .moveBox > div:nth-child(3):after,
+    .product_introduction .customBox .moveBox > div:nth-child(4):after{top: calc(50% - 10px);}
+    .product_introduction .customBox .listBox_3 .txtBox,
+    .product_introduction .customBox .listBox_4 .txtBox{top: calc(50% - 20px);}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div{flex-wrap: wrap;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .imgBox,
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap{width: 100%;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap{margin-left: 0; margin-top: 30px;}
+
+    .business.research_and_development .contentBox .tabBtnWrap{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .business.research_and_development .contentBox .slide_tabBtnBox{width: 970px;}
+    .business.research_and_development .contentBox .slide_tabBtnBox button{font-size: 16px; width: 300px;}
+    .business.research_and_development .contentBox .slide_tabBtnBox button:last-child{padding: 0;}
+    .business.research_and_development .contentBox .slide_tabBtnBox button:last-child:after{display: none;}
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_5:after{left: 80%; width: 20%;}
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_1 button:nth-child(1),
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_2 button:nth-child(2),
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_3 button:nth-child(3),
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_4 button:nth-child(4),
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_5 button:nth-child(5){order: -1;}
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_1:after,
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_2:after,
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_3:after,
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_4:after,
+    .business.research_and_development .contentBox .slide_tabBtnBox.active_5:after{left: 0%; width: 20%;}
+
+    .business.solution_introduction .contentBox .left .tabBtnBox{display: flex;}
+    .business.solution_introduction .contentBox .left .tabBtnBox li:not(:first-child){margin-left: 20px;}
+
+    .business.business_areas h3{margin-bottom: 30px;}
+    .business.business_areas h3 br{display: none;}
+    .business.business_areas .contentBox .left{padding-right: 0;}
+
+    .certification_modal{overflow-y: auto; overflow-x: hidden;}
+    .certification_modal > div{height: auto; width: 90%;}
+    .pr_center.certification_status .contentBox > div .left{padding-right: 0;}
+    .pr_center.certification_status .contentBox > div .left h3{margin-bottom: 30px;}
+
+    .pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_1 button,
+    .pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_2 button,
+    .pr_center.certification_status .contentBox > div .right .slide_tabBtnBox.active_3 button{order: -1;}
+
+    .pr_center.blog .contentBox ul li{width: 49%;}
+    .pr_center.blog .contentBox ul li:not(:nth-child(4n)){margin-right: 0;}
+    .pr_center.blog .contentBox ul li:not(:nth-child(2n)){margin-right: 2%;}
+
+    .pr_center.video .contentBox > ul li{width: 49%;}
+    .pr_center.video .contentBox > ul li:not(:nth-child(3n)){margin-right: 0;}
+    .pr_center.video .contentBox > ul li:not(:nth-child(2n)){margin-right: 2%;}
+
+    .sustainability .contentBox .slide_tabBtnBox.active_1 button:nth-child(1),
+    .sustainability .contentBox .slide_tabBtnBox.active_2 button:nth-child(2){order: -1;}
+    .sustainability .contentBox .slide_tabBtnBox.active_2:after{left: 0;}
+    .sustainability .contentBox .tabContentBox .imgBox span{font-size: 38px; line-height: 58px;}
+
+    .siteMap .contentBox > ul > li{width: 100%;}
+    .siteMap .contentBox > ul > li:not(:nth-child(4n)){margin-right: 0;}
+
+    .researchAndDevelopment .contentBox > ul{flex-wrap: wrap;}
+    .researchAndDevelopment .contentBox > ul li{width: 49%; margin-bottom: 5%;}
+
+    .researchAndDevelopment.vision .contentBox > div{flex-wrap: wrap;}
+    .researchAndDevelopment.vision .contentBox .left,
+    .researchAndDevelopment.vision .contentBox .right{width: 100%;}
+    .researchAndDevelopment.vision .contentBox .left{padding-right: 0; margin-bottom: 30px;}
+    
+    .researchAndDevelopment.technology .contentBox .tableWrap{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .researchAndDevelopment.technology .contentBox .tableWrap table{width: 1480px;}
+}
+
+@media (max-width:768px){
+    .mainSection_1 h2{font-size: 48px; line-height: 68px;}
+    .mainSection_2 h2 span,
+    section:not(.mainSection_1) h2{font-size: 36px; line-height: 56px;}
+    .mainSection_1 p br{display: none;}
+    section:not(.mainSection_1) h2 br{display: none;}
+    .mainSection_3 .right li .imgBox{height: 275px;}
+    .mainSection_3 .right li .imgBox span{font-size: 18px; left: 20px; bottom: 20px;}
+    .mainSection_4 .left p br{display: none;}
+    .mainSection_4 > div{flex-wrap: wrap;}
+    .mainSection_4 .left,
+    .mainSection_4 .right{width: 100%;}
+    .mainSection_4 .left{margin-bottom: 80px;}
+    .mainSection_4 .right{border: 1px solid #DDDDDD;}
+    .mainSection_4 .right > div{padding-top: 30px; box-sizing: border-box; flex-wrap: wrap;}
+    .mainSection_4 .right > div span{text-align: left;}
+    .mainSection_4 .right > div > div:nth-child(1),
+    .mainSection_4 .right > div > div:nth-child(2){width: 100%;}
+    .mainSection_4 .right > div > div:nth-child(1) > div{width: calc(100% - 30px);}
+    .mainSection_4 .right > div > div:nth-child(2){padding-right: 0;}
+    .mainSection_4 .right > div > div:nth-child(1):after,
+    .mainSection_4 .right > div > div:nth-child(1):before,
+    .mainSection_4 .right > div > div:nth-of-type(2) > div:after{display: none;}
+    /* mainPage Fin */
+
+
+    .subPage .sub_nav > span:not(:last-child, :first-child),
+    .subPage .sub_nav > span:not(:first-child){margin-left: 15px;}
+    .subPage .sub_nav > span:not(:last-child, :first-child){padding-right: 20px;}
+    .subPage .sub_nav > span{font-size: 14px;}
+    .subPage .lnb .btnBox{overflow-x: auto; white-space: nowrap; overflow-y: hidden;}
+    .subPage .lnb .btnBox button.active{order: -1;}
+    .subPage .lnb .btnBox button:not(:first-child){margin-left: 0;}
+    .subPage .lnb .btnBox button:not(.active){margin-left: 40px;}
+
+    .list_top{flex-wrap: wrap;}
+    .list_top > div{width: 100%;}
+    .list_top > div:nth-child(1){margin-bottom: 20px;}
+
+    .aboutUs h3{font-size: 38px; line-height: 58px;}
+    .aboutUs h3 br,
+    .business.research_and_development h3 br{display: none;}
+
+    .aboutUs.history .contentBox > div > *{float: none;}
+    .aboutUs.history .contentBox > div > .left,
+    .aboutUs.history .contentBox > div > .right{width: 100%;}
+
+    .product_introduction .customBox .listBox{height: 150px;}
+    .product_introduction.product_list .contentBox ul li{width: 100%;}
+    .product_introduction.product_list .contentBox ul li:not(:nth-child(2n)){margin-right: 0;}
+    .product_introduction .customBox .listBox .txtBox span:nth-child(1){font-size: 14px;}
+    .product_introduction .customBox .listBox .txtBox span:nth-child(2){font-size: 18px;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap{overflow-y: hidden; overflow-x: scroll; white-space: nowrap;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table{width: 720px;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr th,
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr td{font-size: 16px; vertical-align: top; padding: 10px 15px;}
+    .product_introduction:not(.product_list) .contentBox > .specBox > div .tableWrap table tbody tr th{position: sticky; left: 0; top: 0; width: 100px;}
+    .product_introduction:not(.product_list) .contentBox > .btnBox{flex-wrap: wrap;}
+    .product_introduction:not(.product_list) .contentBox > .btnBox > div{width: 100%;}
+    .product_introduction:not(.product_list) .contentBox > .btnBox button{width: 100%; margin-bottom: 20px;}
+    .product_introduction:not(.product_list) .contentBox > .btnBox > div button:not(:first-child){margin-left: 0;}
+    .product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap{flex-wrap: wrap;}
+    .product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap > .imgBox{width: 100%;}
+    .product_introduction:not(.product_list) .contentBox > .txtBox > .imgWrap > .imgBox:not(:last-of-type){margin-bottom: 30px;}
+
+    .business.solution_introduction .contentBox .left .tabBtnBox{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .business.research_and_development .contentBox .tabContentBox ul li{padding: 25px 20px;}
+
+    .pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(1){width: 80px;}
+    .pr_center.notice .contentBox .tableWrap table thead tr th:nth-child(2){width: 1095px;}
+
+    .pr_center.certification_status .contentBox > div .right .tabContentBox ul li{width: 100%;}
+    .pr_center.certification_status .contentBox > div .right .tabContentBox ul li:not(:nth-child(2n)){margin-right: 0;}
+    .pr_center.certification_status .contentBox > div .right .slide_tabBtnBox button{width: 110px;}
+
+    .pr_center.catalogue .contentBox ul li{width: 100%;}
+    .pr_center.catalogue .contentBox ul li:not(:nth-child(3n)){margin-right: 0;}
+
+    .pr_center.blog .contentBox ul li{width: 100%;}
+    .pr_center.blog .contentBox ul li:not(:nth-child(2n)){margin-right: 0;}
+
+    .pr_center.video .contentBox > ul li{width: 100%;}
+    .pr_center.video .contentBox > ul li:not(:nth-child(2n)){margin-right: 0;}
+
+    .sustainability .contentBox .tabContentBox .imgBox img{height: 200px; border-radius: 5px;}
+    .sustainability .contentBox .tabContentBox .imgBox span{font-size: 28px; line-height: 48px;}
+    .sustainability .contentBox .grayBox{padding: 25px 15px;}
+
+    .customer_support .contentBox{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .customer_support .contentBox fieldset{width: 100%;}
+    .customer_support .contentBox fieldset,
+    .customer_support .contentBox fieldset .tableWrap{overflow-y: hidden; overflow-x: auto; white-space: nowrap;}
+    .customer_support .contentBox fieldset .tableWrap table{width: 1480px;}
+    .customer_support .contentBox fieldset .tableWrap:nth-of-type(1){padding: 20px 30px 20px 0;}
+    .customer_support .contentBox fieldset .tableWrap:nth-of-type(1) th{width: 130px; padding-left: 30px; box-sizing: border-box; position: sticky; left: 0; top: 0; background-color: #fff;}
+
+
+    .researchAndDevelopment .contentBox > ul li{width: 100%;}
+
+    .researchAndDevelopment .contentBox > ol{padding: 25px;}
+}
+
+

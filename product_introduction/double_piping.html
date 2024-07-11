@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>이중배관</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/b025689c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">logo</a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutUs/ceo_greetings.html">회사소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/history.html">연혁</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product_introduction/product_list.html">제품소개</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../product_introduction/double_piping.html">이중배관</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../business/research_and_development.html">연구개발</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../business/research_and_development.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/business_areas.html">사업분야</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../pr_center/notice.html">홍보센터</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../pr_center/notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/certification_status.html">인증현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/video.html">영상자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/blog.html">블로그</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../sustainability/sustainability.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../customer_support/customer_support.html">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <button>EN</button>
+                                <button class="active">KR</button>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">logo</a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>제품소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../product_introduction/double_piping.html">이중배관</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>연구개발</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../business/research_and_development.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                </li>
+                                <li>
+                                    <a href="../business/business_areas.html">사업분야</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/certification_status.html">인증현황</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/video.html">영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/blog.html">블로그</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../sustainability/sustainability.html">지속가능경영</a>
+                        </li>
+                        <li>
+                            <a href="../customer_support/customer_support.html">고객지원</a>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+        
+        <button class="topBtn"></button>
+        <!-- topBtn -->
+        
+        <div class="subPage product_introduction double_piping">
+            <div class="lnb">
+                <div>
+                    <div class="sub_nav">
+                        <span></span>
+                        <span>제품소개</span>
+                        <span>이중배관</span>
+                    </div>
+    
+                    <h2>이중배관</h2>
+                    <span>Double Wall Piping System</span>
+    
+                    <div class="customBox">
+                        <div class="moveBox">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <!-- 움직이는 박스 -->
+                        <div class="listBox listBox_1">
+                            <div class="frameBox">
+                                <span class="left_top"></span>
+                                <span class="right_top"></span>
+                                <span class="left_bottom"></span>
+                                <span class="right_bottom"></span>
+                            </div>
+                            <div class="txtBox">
+                                <span>사용유체</span>
+                                <span>H2, NG, NH3, CH3OH</span>
+                            </div>
+                        </div>
+                        <!-- 사용유체 Fin -->
+                        <div class="listBox listBox_2">
+                            <div class="frameBox">
+                                <span class="left_top"></span>
+                                <span class="right_top"></span>
+                                <span class="left_bottom"></span>
+                                <span class="right_bottom"></span>
+                            </div>
+                            <div class="txtBox">
+                                <span>사용온도</span>
+                                <span>-50 ~ 80℃</span>
+                            </div>
+                        </div>
+                        <!-- 사용온도 Fin -->
+                        <div class="listBox listBox_3">
+                            <div class="frameBox">
+                                <span class="left_top"></span>
+                                <span class="right_top"></span>
+                                <span class="left_bottom"></span>
+                                <span class="right_bottom"></span>
+                            </div>
+                            <div class="txtBox">
+                                <span>사용압력</span>
+                                <span>~ 700bar</span>
+                            </div>
+                        </div>
+                        <!-- 사용압력 Fin -->
+                        <div class="listBox listBox_4">
+                            <div class="frameBox">
+                                <span class="left_top"></span>
+                                <span class="right_top"></span>
+                                <span class="left_bottom"></span>
+                                <span class="right_bottom"></span>
+                            </div>
+                            <div class="txtBox">
+                                <span>재질</span>
+                                <span>스테인리스 강</span>
+                            </div>
+                        </div>
+                        <!-- 재질 Fin -->
+                    </div>
+                </div>
+            </div>
+            <!-- lnb Fin -->
+
+            <div class="contentBox">
+                <h3>이중배관</h3>
+                <div class="txtBox">
+                    <h4>이중배관 정의</h4>
+                    <p>
+                        이중배관은 두 개의 독립된 파이프가 서포트를 통해 지지된 구조를 가지고 있습니다. 내관은 가스 공급관, 외관은 내관에서 누출되는 가스가 밖으로 빠져나가거나 폭발하여 외부로 나가는 것을 방지하고, 외부의 요인이
+                        내관에 작용하지 않도록 보호합니다. 예상치 못한 사고인해 내부 파이프에 균열이 발생하여 가스가 새는 경우 외부 파이프가 배관 밖으로 가스가 유출되는 것을 방지하여 주변 설비와 작업자를 보호합니다. 주로 가스
+                        공급용으로 사용하고, 다양한 유체와 압력에 적용이 가능합니다. 외부로 누출되면 안되는 가연성가스 및 독성가스에 적합하며 가스 누설 경보 및 자동 배출 시스템과 연동하여 사용도 가능합니다. 또한 이중배관은
+                        적용하는 온도와 압력에 따라 설계가 달라지는데, 이중배관을 사용하는 환경에 따라 적용하는 배관의 규격 및 서포트의 종류를 선정하고  그에 맞는 설계와 유동해석, 구조해석을 통하여 검증 후, 제작하여 공급합니다.
+                    </p>
+                    <p>정우이앤이의 이중배관은 2023년 기준 300척 이상, 육상플랜트에 적용된 실적을 보유하고 있습니다. 현재도 더 많은 분야에 적용할 수 있도록 R&D 및 시험을 진행하여 경험과 신뢰성을 만족시키고자 노력하고 있습니다.</p>
+                    <div class="imgWrap">
+                        <div class="imgBox">
+                            <img src="../assets//images/double_wall_piping_system1.png" alt="이중배관">
+                        </div>
+                        <div class="imgBox">
+                            <img src="../assets//images/double_wall_piping_system2.png" alt="이중배관">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="txtBox">
+                    <h4>일반적인 특징</h4>
+                    <p>
+                        이중배관은 진공단열 배관과는 달리 파이프와 파이프 사이에 단열재를 충전하지 않기 때문에 외기와 내기의 온도차이로 인한 영향을 상대적으로 많이 받습니다. 대신에 환경에 걸맞는 재질을 적용하여 온도의 영향을
+                        최소화 하도록 설계되었습니다. LNG, H2 가스 수송, 수처리 설비, 화학 공정, 반도체 공장 등의 산업에 적용이 가능하며, 특히 항공, 잠수정 등 극한 환경에 노출되는 산업 분야에 매우 적합합니다. 외부 충격으로 외부
+                        파이프가 손상을 입은 경우 내부 파이프가 보호해 주거나, 반대로 내부 파이프에 균열이 발생하여 연료가 새는 경우 외부 파이프가 막아 주어 추진력을 잃어 버리는 일이 없도록 합니다.
+                    </p>
+                    <p>
+                        이중배관은 용도에 따라 식음료 제작 설비에도 적용이 가능한데, 예를 들어 일정한 온도를 유지해야 하는 초콜릿 생산 설비의 경우 내부 파이프에서는 약 20°C를 일정하게 유지해 주어야 하는데 단일 파이프를 사용하게
+                        되면 외부 기온에 노출되어 계절에 따른 온도 변화를 겪게 됩니다. 하지만 이중 배관을 사용하면 온도 변화없이 일정한 품질의 제품을 생산할 수 있습니다. 
+                    </p>
+                    <p>이처럼 이중배관의 적용 범위는 매우 넓어 해양, 플랜트 산업 분야 뿐만 아니라 산업 전분야에 쓰일 수 있습니다.</p>
+                </div>
+                <div class="txtBox">
+                    <h4>기술력</h4>
+                    <p>
+                        정우ENE는 이중배관과 관련하여 선박용 연료가스 이중배관에 관한 특허를 등록하여 기술력에서 앞서가고 있습니다. 선박용의 연료를 가스로 사용하는 경우 안전을 요구하는 구간이나 압력이 높은 경우는 배관의 구조가
+                        이중배관으로 구성되어 있어야 하며, 이중배관의 내부와 외부배관은 일정한 간격을 필수적으로 유지되어야 하는데, 이중배관을 제작 또는 설치하기 위해서는 선박의 고유 진동을 방지하지 위해 내부배관과 외부배관의
+                        사이를 일정한 간격으로 유지하는 것이 고려해야 하는 어떠한 사항보다 매우 중요합니다. 
+                    </p>
+                    <p>정우ENE는 해당 특허를 통해 이와 같은 문제를 해결하였으며, 특수 설계된 방사형 고정 장치를 적용하여 진동을 흡수하고 내부배관의 처짐으로 인한 안전사고의 발생을 효과적으로 예방합니다.</p>
+                    <div class="imgBox">
+                        <img src="../assets//images/double_wall_piping_system3.png" alt="이중배관">
+                    </div>
+                </div>
+                
+                <div class="specBox">
+                    <h4>제품 스펙</h4>
+                    <span>제품명 입력란</span>
+                    <div>
+                        <div class="imgBox">
+                            <img src="../assets//images/product_spec_sample.png" alt="제품 스팩">
+                        </div>
+                        <div class="tableWrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Net volume</th>
+                                        <td>50L</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total volume</th>
+                                        <td>56L</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tank weight</th>
+                                        <td>156kg</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Boil-off rate</th>
+                                        <td>Max. 2.0L/day</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Storage pressure</th>
+                                        <td>0 - 12bar g.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Maximum Allowable<br>
+                                            working Pressure
+                                        </th>
+                                        <td>12 bar g.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <a href="../product_introduction/product_list.html" class="productListBtn">제품리스트</a>
+                    <div>
+                        <button class="estimateBtn">견적요청</button>
+                        <button class="web3dBtn">웹 3D</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="gray">
+            <div>
+                <img src="../assets//images/footer_logo.png" alt="정우 ENE 로고">
+                <div>
+                    <span>정우이앤이(주)</span>
+                    <span>대표이사 : 이선해</span>
+                    <span>부산광역시 강서구 녹산산단261로74번길 20</span>
+                </div>
+                <div>
+                    <span>TEL : +(82) 51-639-0700</span>
+                    <span>FAX : +(82) 51-941-3561</span>
+                    <span>E-MAIL : --@--</span>
+                </div>
+                <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

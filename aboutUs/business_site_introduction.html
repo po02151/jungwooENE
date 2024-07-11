@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>사업장소개</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/b025689c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">logo</a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutUs/ceo_greetings.html">회사소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/history.html">연혁</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product_introduction/product_list.html">제품소개</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../product_introduction/double_piping.html">이중배관</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../business/research_and_development.html">연구개발</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../business/research_and_development.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/business_areas.html">사업분야</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../pr_center/notice.html">홍보센터</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../pr_center/notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/certification_status.html">인증현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/video.html">영상자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/blog.html">블로그</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../sustainability/sustainability.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../customer_support/customer_support.html">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <button>EN</button>
+                                <button class="active">KR</button>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">logo</a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>제품소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../product_introduction/double_piping.html">이중배관</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>연구개발</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../business/research_and_development.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                </li>
+                                <li>
+                                    <a href="../business/business_areas.html">사업분야</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/certification_status.html">인증현황</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/video.html">영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/blog.html">블로그</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../sustainability/sustainability.html">지속가능경영</a>
+                        </li>
+                        <li>
+                            <a href="../customer_support/customer_support.html">고객지원</a>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+        
+        <button class="topBtn"></button>
+        <!-- topBtn -->
+        
+        <div class="subPage aboutUs business_site_introduction">
+            <div class="lnb">
+                <div>
+                    <div class="sub_nav">
+                        <span></span>
+                        <span>회사소개</span>
+                        <span>사업장소개</span>
+                    </div>
+    
+                    <h2>사업장소개</h2>
+    
+                    <div class="btnBox">
+                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                        <a href="../aboutUs/history.html">연혁</a>
+                        <a href="../aboutUs/business_site_introduction.html" class="active">사업장소개</a>
+                    </div>
+                </div>
+            </div>
+            <!-- lnb Fin -->
+
+            <div class="contentBox">
+                <div>
+                    <div class="left stickyBox">
+                        <h3>
+                            정우이앤이(주)의 사업장을<br>
+                            안내해드립니다.
+                        </h3>
+
+                        <ul>
+                            <li>
+                                <span>전화번호</span>
+                                <span>051-639-0700</span>
+                            </li>
+                            <li>
+                                <span>팩스</span>
+                                <span>051-941-3561</span>
+                            </li>
+                            <li>
+                                <span>이메일</span>
+                                <span>sales@cryogen.co.kr</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="slide_tabBtnWrap">
+                            <div class="slide_tabBtnBox active_1">
+                                <button class="tabBtn_1">
+                                    <span>정우이앤이(주) 본사</span>
+                                </button>
+                                <button class="tabBtn_2">
+                                    <span>화전공장(제2공장)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 첫번째 버튼을 누르면 slide_tabBtnBox에 active_1 클래스, 두번째 버튼 : active_2 -->
+
+                        <div class="tabContentBox">
+                            <div class="tabContent_1 active">
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.458919279937!2d128.84558137638038!3d35.09524986193997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568dac274522581%3A0xfeafaae133600198!2z67aA7IKw6rSR7Jet7IucIOqwleyEnOq1rCDrhbnsgrDsgrDri6gyNjHroZw3NOuyiOq4uCAyMA!5e0!3m2!1sko!2skr!4v1697095457642!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <a href="https://www.google.com/maps?ll=35.103564,128.880183&z=16&t=m&hl=ko&gl=KR&mapclient=embed&q=%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C+%EA%B0%95%EC%84%9C%EA%B5%AC+%ED%99%94%EC%A0%84%EC%82%B0%EB%8B%A82%EB%A1%9C+78" target="_blank">부산광역시 강서구 녹산산단261로74번길 20</a>
+                            </div>
+                            <div class="tabContent_2">
+                                <div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.1258331203026!2d128.8776076763805!3d35.103568661489305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568c4cb05b419a1%3A0xca42b7b650387a9d!2z67aA7IKw6rSR7Jet7IucIOqwleyEnOq1rCDtmZTsoITsgrDri6gy66GcIDc4!5e0!3m2!1sko!2skr!4v1697095478684!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <a href="https://www.google.com/maps/place/%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C+%EA%B0%95%EC%84%9C%EA%B5%AC+%ED%99%94%EC%A0%84%EC%82%B0%EB%8B%A82%EB%A1%9C+78/data=!4m6!3m5!1s0x3568c4cb05b419a1:0xca42b7b650387a9d!8m2!3d35.1035643!4d128.8801826!16s%2Fg%2F11c44m4959?hl=ko&entry=ttu" target="_blank">부산광역시 화전산단2로 78</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="gray">
+            <div>
+                <img src="../assets/images/footer_logo.png" alt="정우 ENE 로고">
+                <div>
+                    <span>정우이앤이(주)</span>
+                    <span>대표이사 : 이선해</span>
+                    <span>부산광역시 강서구 녹산산단261로74번길 20</span>
+                </div>
+                <div>
+                    <span>TEL : +(82) 51-639-0700</span>
+                    <span>FAX : +(82) 51-941-3561</span>
+                    <span>E-MAIL : --@--</span>
+                </div>
+                <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

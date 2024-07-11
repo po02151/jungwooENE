@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>R&D</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/b025689c8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">logo</a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="../aboutUs/ceo_greetings.html">회사소개</a>
+                                <ul class="sub_menu sub_menu_1">
+                                    <li>
+                                        <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/history.html">연혁</a>
+                                    </li>
+                                    <li>
+                                        <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product_introduction/product_list.html">제품소개</a>
+                                <ul class="sub_menu sub_menu_2">
+                                    <li>
+                                        <a href="../product_introduction/double_piping.html">이중배관</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../business/research_and_development.html">연구개발</a>
+                                <ul class="sub_menu sub_menu_3">
+                                    <li>
+                                        <a href="../business/research_and_development.html">R&D</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../business/business_areas.html">사업분야</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../pr_center/notice.html">홍보센터</a>
+                                <ul class="sub_menu sub_menu_4">
+                                    <li>
+                                        <a href="../pr_center/notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/certification_status.html">인증현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/video.html">영상자료</a>
+                                    </li>
+                                    <li>
+                                        <a href="../pr_center/blog.html">블로그</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../sustainability/sustainability.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../customer_support/customer_support.html">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <button>EN</button>
+                                <button class="active">KR</button>
+                            </div>
+                        </div>
+                        <a href="../etc/siteMap.html" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">logo</a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/ceo_greetings.html">CEO 인사말</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/business_site_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>제품소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../product_introduction/double_piping.html">이중배관</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_insulated_piping.html">진공단열배관/플렉시블 호스</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_valve.html">극저온 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/vacuum_jacketed_valve.html">진공자켓 밸브</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_tank.html">초저온 용기</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/high_pressure_pump.html">고압 펌프</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/cryogenic_loading_arm.html">극저온 로딩암</a>
+                                </li>
+                                <li>
+                                    <a href="../product_introduction/lh2_fuel_gas_supply_system.html">액화수소연료공급장치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>연구개발</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../business/research_and_development.html">R&D</a>
+                                </li>
+                                <li>
+                                    <a href="../business/solution_introduction.html">솔루션 소개</a>
+                                </li>
+                                <li>
+                                    <a href="../business/business_areas.html">사업분야</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/notice.html">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/certification_status.html">인증현황</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/catalogue.html">전자 카탈로그</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/video.html">영상자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/blog.html">블로그</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../sustainability/sustainability.html">지속가능경영</a>
+                        </li>
+                        <li>
+                            <a href="../customer_support/customer_support.html">고객지원</a>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+        
+        <button class="topBtn"></button>
+        <!-- topBtn -->
+        
+        <div class="subPage business research_and_development">
+            <div class="lnb">
+                <div>
+                    <div class="sub_nav">
+                        <span></span>
+                        <span>비즈니스</span>
+                        <span>R&D</span>
+                    </div>
+    
+                    <h2>R&D</h2>
+    
+                    <div class="btnBox">
+                        <a href="../business/research_and_development.html" class="active">R&D</a>
+                        <a href="../business/solution_introduction.html">솔루션소개</a>
+                        <a href="../business/business_areas.html">사업분야</a>
+                    </div>
+                </div>
+            </div>
+            <!-- lnb Fin -->
+
+            <div class="contentBox">
+                <h3>
+                    액화수소 플랜트용 이송 공정을 위한<br>
+                    연료 이송시스템 기술 개발
+                </h3>
+                <div class="txtBox">
+                    <p>
+                        수소는 인류가 당면하고 있는 에너지 문제와 환경 문제를 동시에 해결할 수 있는 에너지원으로서 주목받고 있어 미래는 저탄소 청정에너지원인 ‘수소에너지 수급 시스템에 기반한 경제체제’인 「수소·경제사회」로의 재편이
+                        예상되고 있습니다.
+                    </p>
+                    <p>
+                        2017년 1월 17일 다보스 포럼에서 ‘수소위원회(Hydrogen Council)’가 신설되어 탄소 경제사회를 수소 경제사회로 이행을 촉진하기 위한 국제적인 노력이 이뤄지고 있으며, 국제에너지기구(IEA)는 세계 수소자동차
+                        비율을 2030년 1.8%, 2050년 17.7%로 전망하고 있으나 미국은 2050년까지 신차 판매 중 수소자동차 비율을 27%로, 독일은 2030년까지 25%로 끌어올리는 보급 로드맵을 추진 중입니다. 일본 정부는 2013년
+                        발표된 에너지기본계획 법안에서 “수소 사회 실현”을 명문화하였고 우리나라도 2018년 4월 10일 “수소 경제법안” 발의를 통하여 미래 수소 경제사회로의 이행을 촉진하기 위해 노력 중입니다.
+                    </p>
+                    <p>
+                        국내에서는 수소 경제 실현을 위한 다양한 법안 및 개발이 진행되고 있으며, 2020년 1월 9일 ‘수소 경제 육성 및 수소 안전관리에 관한 법률안’이 마련되었으며, 저압 수소 용품 및 수소연료사용시설에 대한 안전 확보를
+                        위한 법적 근거가 마련되었습니다. 배출가스 저감, 기술 고도화 및 기술 파급 효과 등을 고려할 때 각국은 연료전지 활용기술에 집중하고 있으며, 수소연료전지자동차는 긴 주행거리, 편리한 충전 및 기존 전력 부하에 부담이
+                        없다는 점이 우수합니다.
+                    </p>
+                </div>
+                <div class="imgBox">
+                    <img src="../assets/images/ceo_greeings.png" alt="CEO 인사말">
+                </div>
+                <div class="txtBox">
+                    <p>
+                        기존의 수소 플랜트는 기체(고압)수소의 저장을 기본으로 하고 있으며, 이러한 방식은 현재의 적은 양의 사용 등에는 적합하나, 수소의 수요가 늘어나면 저장량의 한계 대용량 저장을 위한 암반 동굴 지하 저장 방식 등이
+                        적용되기 어려운 부분이 있으므로, 대규모 액화수소 플랜트가 활용될 것으로 판단됩니다.
+                    </p>
+                    <p>
+                        현재의 수소의 운송방법은 현지 생산, 파이프라인 운송, 도로/선박을 이용한 운송으로 분류할 수 있으며, 단시일 내의 액화수소 운송은 탱크로리를 활용하는 방법이 주를 이룰 것으로 보이며, 이러한 탱크로리를 활용한
+                        이송의 경우 Plant 내부에서 사용하기는 어려움이 있으며, 기존의 플랜트 내부의 운송이 경우 우레탄 단열 등을 활용한 방안을 주로 사용하고 있습니다. 기존의 액화천연가스 이송 시스템의 경우 우레탄을 일정 이상 두께를
+                        감는 것으로 사용이 가능하였으나, 기존의 단열법 좌, 우 각 250mm 이상이 액화천연가스(-163℃)에 사용되었으나, 액화수소의 온도를 고려할 때 단열재의 두께는 250mm 이상으로 구성되어야 충분한 액화수소 유지를
+                        기대할 수 있을 것으로 판단됩니다.
+                    </p>
+                    <p>
+                        기존의 액화천연가스 이송 시스템의 경우 우레탄을 일정 이상 두께를 감는 것으로 사용이 가능하였으나, 기존의 단열법 좌, 우 각 250mm 이상이 액화천연가스(-163℃)에 사용되었으나, 액화수소의 온도를 고려할 때
+                        단열재의 두께는 250mm 이상으로 구성되어야 충분한 액화수소 유지를 기대할 수 있을 것으로 보입니다.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="tabBtnWrap">
+                        <div class="slide_tabBtnBox active_1">
+                            <button class="tabBtn_1 active"><span>액화수소 이송시스템</span></button>
+                            <button class="tabBtn_2"><span>이송시스템 공인시험</span></button>
+                            <button class="tabBtn_3"><span>물성시험 안전성 평가</span></button>
+                            <button class="tabBtn_4"><span>이송시스템 밸브</span></button>
+                            <button class="tabBtn_5"><span>시험규격검토 및 기술지원</span></button>
+                        </div>
+                    </div>
+                    <!-- 첫번째 버튼을 누르면 tabBtnBox에 active_1, 두번째 버튼을 누르면 tabBtnBox에 active_2 -->
+
+                    <div class="tabContentBox">
+                        <div class="tabContent_1 active">
+                            <ul>
+                                <li>
+                                    <h4>액화수소 이송시스템 설계</h4>
+                                    <span>액화수소의 온도를 고려하여, 전체 요구되는 유량의 분석을 통한 메인 배관의 적정성 분석</span>
+                                    <span>액화수소 이송시스템용 안전시스템 설계</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 제작 기술 개발</h4>
+                                    <span>액화수소 이송시스템의 특성을 고려한 안전 시스템 및 설치 기법 개발</span>
+                                    <span>기존 단열재 시공 기법의 분석을 통한 적정 Layer 및 시공 기법 개발</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템용 배관 설계</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템용 배관 제작</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 제작</h4>
+                                </li>
+                                <li>
+                                    <h4>기자재 시험용 테스트 베드 제작</h4>
+                                    <span>외부 전문가 자문을 진행한 액화수소 시험 진행을 위한 테스트 베드 설계</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 액화수소 이송시스템 Fin -->
+                        <div class="tabContent_2">
+                            <ul>
+                                <li>
+                                    <h4>액화수소 이송시스템용 배관 공인시험</h4>
+                                    <span>시험 절차에 따른 액화수소 이송배관의 공인인증시험</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 시제품 제작</h4>
+                                    <span>액화수소 이송시스템 Test Bed 내부 기자재 설치 진행</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 현장 설치</h4>
+                                    <span>시험 부지 내부 액화수소 이송시스템 Bed 설치</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 공인시험 진행</h4>
+                                    <span>시험 절차에 기반한 액화수소 이송 시스템의 공인 시험 진행</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이송시스템 공인시험 Fin -->
+                        <div class="tabContent_3">
+                            <ul>
+                                <li>
+                                    <h4>초저온(액화수소) 적용 가능 소재별 상온/저온 재료 물성실험</h4>
+                                    <span>초저온(액화수소) 적용 가능 소재별 상온/저온 재료 인장실험 수행</span>
+                                    <span>실험결과 DB 구축</span>
+                                </li>
+                                <li>
+                                    <h4>초저온(액화수소)에 사용 가능 소재별 상온/저온 물성실험</h4>
+                                    <span>액화수소 이송시스템 기자재 적용 소재의 비선형 구성방정식 개발</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 설계 지원(해석절차서 개발)</h4>
+                                    <span>이송시스템의 열전달 및 열응력 해석을 수행하기 위한 해석절차 개발</span>
+                                    <span>구조물과 단열재에 대한 열적 물성치 및 구조 물성치 적용</span>
+                                    <span>액화수송 이송시스템(파이프) 모델링</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 안전성 평가</h4>
+                                    <span>액화수송 이송시스템(파이프) 열전달 해석 및 구조해석 수행</span>
+                                    <span>수치해석 결과 분석을 통한 액화수소 이송시스템 시험 시나리오 선정</span>
+                                    <span>이송시스템 시험 계측 포인트 선정</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송시스템 시험 절차서 개발</h4>
+                                    <span>액화수소 이송시스템 안전성 평가를 기반으로 한 시험절차서 개발</span>
+                                    <span>액화수소 이송상황을 고려한 시험 안전대책 계획</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 물성시험 안전성 평가 Fin -->
+                        <div class="tabContent_4">
+                            <ul>
+                                <li>
+                                    <h4>액화수소 이송시스템용 밸브 사양 검토</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 밸브 설계</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송밸브 제작 기술개발 및 시제품 제작</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송밸브 공인인증 시험</h4>
+                                </li>
+                                <li>
+                                    <h4>액화수소 이송 시스템 설치지원</h4>
+                                </li>
+                                <li>
+                                    <h4>국내외 액화수소 밸브 시험규격 조사</h4>
+                                    <span>액화수소 밸브의 주요 시험 항목 확인</span>
+                                    <span>시험 항목별 시험 범위 및 주요 변수 확인</span>
+                                    <span>국내 외 액화수소 기자재 시험소 방문 및 조사</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 밸브 관련 시험방법에 대한 지침서(절차) 도출</h4>
+                                    <span>개발 제품의 성능평가를 위한 시험 종류 선정</span>
+                                    <span>시험 항목별 시험 범위 및 주요 변수 선정</span>
+                                    <span>액화수소 테스트 환경 및 조성에 대한 절차 선정</span>
+                                </li>
+                                <li>
+                                    <h4>액화수소 밸브 설계를 위한 전산해석 지원</h4>
+                                    <span>액화수소 용 극저온(-253℃ 이하) 밸브에 대한 구조 안전성 평가</span>
+                                    <span>극저온 유체에 대한 밸브의 열전달 해석 및 열응력 해석</span>
+                                    <span>초저온(-196℃) 및 극저온(-250℃) 환경에서의 비교 분석</span>
+                                    <span>압력조건 설정 최대변형량 최대응력 발생지점 확인</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이송시스템 밸브 Fin -->
+                        <div class="tabContent_5">
+                            <ul>
+                                <li>
+                                    <h4>외부 전문가를 활용한 시험규격의 기술적 검토</h4>
+                                    <span>외부 전문가를 활용한 액화수소 관련 자문 또는 세미나 진행</span>
+                                    <span>밸브에 대한 시험방법을 구체화 및 규격화 정립</span>
+                                    <span>국내 관련분야 전문가를 초청하여 시험규격에 대한 평가 수행</span>
+                                    <span>전문가 그룹을 통한 평가 의견 수렴 및 표준 제안서에 반영</span>
+                                </li>
+                                <li>
+                                    <h4>연구개발 제품에 대한 시험 기술 지원</h4>
+                                    <span>액화수소 시험규격에 대한 주관 및 공동연구기관 교육지원</span>
+                                    <span>개발 시험규격을 활용한 신뢰성 평가 기술 지원</span>
+                                    <span>정량적 목표시험을 통한 신규개발 시험규격의 적합성 검토</span>
+                                </li>
+                                <li>
+                                    <h4>도출된 시험규격(안)에 대한 표준 제안</h4>
+                                    <span>밸브 관련 시험방법에 대한 표준 시험규격 제안서 작성</span>
+                                    <span>액화수소 밸브 시험 규격에 대한 국가표준 제안</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 시험규격검토 및 기술지원 Fin -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="gray">
+            <div>
+                <img src="../assets/images/footer_logo.png" alt="정우 ENE 로고">
+                <div>
+                    <span>정우이앤이(주)</span>
+                    <span>대표이사 : 이선해</span>
+                    <span>부산광역시 강서구 녹산산단261로74번길 20</span>
+                </div>
+                <div>
+                    <span>TEL : +(82) 51-639-0700</span>
+                    <span>FAX : +(82) 51-941-3561</span>
+                    <span>E-MAIL : --@--</span>
+                </div>
+                <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
